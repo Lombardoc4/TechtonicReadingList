@@ -96,11 +96,20 @@ const init = async () => {
 };
 
 init().then(() => {
-    fs.writeFile('titleList.js', `const data =${JSON.stringify(allRecords, null, ' ')}`, (err) => {
-        if (err)
-            throw err;
-        console.log('data is saved.');
+    arrayEach(allRecords, async (record, i) => {
+        const { title, showAnchor } =  record;
+        // console.log('showAnchor', showAnchor);
+        const anchorPage = await getDom(showAnchor);
+        const possibleBook = anchorPage.querySelector('.everything em');
+        // const childAnchor = possibleBook.firstElementChild
+        console.log(title, possibleBook.parentElement.href, possibleBook.firstChild.href);
+        // if possibleBook.parentNode
     });
+    // fs.writeFile('titleList.js', `const data =${JSON.stringify(allRecords, null, ' ')}`, (err) => {
+    //     if (err)
+    //         throw err;
+    //     console.log('data is saved.');
+    // });
 });
 
 // getDom(initURL)
