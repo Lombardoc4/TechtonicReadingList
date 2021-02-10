@@ -32,7 +32,7 @@ const data = [
         title:        'Station Manager Ken with Poet and Author Elisa Gabbert on Doomscrolling, Contagious Conversion Disorder and More',
         showAnchor:   'https://www.wfmu.org/playlists/shows/99544',
         bookAnchor:   'http://www.elisagabbert.com/the-unreality-of-memory/',
-        bookImageSrc: 'http://www.elisagabbert.com/wp-content/uploads/2020/02/8A8433E1-9CD1-4303-A381-2C198342C7EA.png',
+        bookImageSrc: 'https://pbs.twimg.com/media/EttsJnnXAAU4_U3?format=jpg&name=small',
     },
     {
         date:         'November 30, 2020',
