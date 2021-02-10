@@ -364,7 +364,7 @@ const data = [
         title:        'Jaron Lanier, author, "Ten Arguments for Deleting Your Social Media Accounts Right Now"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/80248',
         bookAnchor:   'http://www.jaronlanier.com/tenarguments.html',
-        bookImageSrc: 'http://www.jaronlanier.com/TenArguments-us_fulljacket.jpg',
+        bookImageSrc: 'https://images.macmillan.com/folio-assets/macmillan_us_frontbookcovers_350W/9781250196682.jpg',
     },
     {
         date:         'June 25, 2018',
