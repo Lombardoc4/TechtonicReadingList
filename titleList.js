@@ -1,5 +1,12 @@
 const data = [
     {
+        date:         'February 15, 2021',
+        title:        'Andrea Pitzer, author, "Icebound: Shipwrecked at the Edge of the World"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/101180',
+        bookAnchor:   'https://www.indiebound.org/book/9781982113346',
+        bookImageSrc: 'https://images.booksense.com/images/346/113/9781982113346.jpg',
+    },
+    {
         date:         'February 1, 2021',
         title:        'Adrian Daub, author, "What Tech Calls Thinking"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/100846',
