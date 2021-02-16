@@ -1,0 +1,30 @@
+#booklist{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: auto;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.bookImg{
+    width: 160px;
+    box-shadow: 0 10px 5px -5px grey;
+    margin: 2em 0;
+}
+
+.bookEntry{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.showInfo{
+    padding: 2em 2em 2em 1em ;
+
+}
+
+
+#booklist.mobile .bookEntry{
+    width: 80%;
+}
