@@ -207,7 +207,7 @@ const data = [
     },
     {
         date:         'September 16, 2019',
-        title:        'Sarah T. Roberts, author of "Behind the Screen," on content moderators',
+        title:        'Sarah T. Roberts, author of "Behind the Screen" on content moderators',
         showAnchor:   'https://www.wfmu.org/playlists/shows/88340',
         bookAnchor:   'https://www.behindthescreen-book.com/',
         bookImageSrc: 'https://creativegood.com/img/misc/behind-the-screen.jpg',
