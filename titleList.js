@@ -1,5 +1,12 @@
 const data = [
     {
+        date:         'February 22, 2021',
+        title:        'Annie Jacobsen, author, "First Platoon"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/101390',
+        bookAnchor:   'https://www.indiebound.org/book/9781524746667',
+        bookImageSrc: 'https://images.booksense.com/images/667/746/9781524746667.jpg',
+    },
+    {
         date:         'February 15, 2021',
         title:        'Andrea Pitzer, author, "Icebound: Shipwrecked at the Edge of the World"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/101180',
