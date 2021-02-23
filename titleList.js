@@ -392,7 +392,7 @@ const data = [
         title:        'Brett Frischmann, co-author, "Re-Engineering Humanity"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/79640',
         bookAnchor:   'https://www.reengineeringhumanity.com/',
-        bookImageSrc: 'https://static.wixstatic.com/media/2baaaf_4aecb585947b4c49a0553590338147a2~mv2.png/v1/fill/w_226,h_348,al_c,q_85,usm_0.66_1.00_0.01/2baaaf_4aecb585947b4c49a0553590338147a2~mv2.webp',
+        bookImageSrc: './img/Re-engineering_Humanity.png',
     },
     {
         date:         'June 4, 2018',
