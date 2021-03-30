@@ -1,5 +1,12 @@
 const data = [
     {
+        date:         'March 22, 2021',
+        title:        'Paul Kingsnorth, author, "Alexandria"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/102231',
+        bookAnchor:   'https://www.indiebound.org/book/9781644450352',
+        bookImageSrc: 'https://images.booksense.com/images/352/450/9781644450352.jpg',
+    },
+    {
         date:         'February 22, 2021',
         title:        'Annie Jacobsen, author, "First Platoon"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/101390',
