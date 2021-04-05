@@ -1,5 +1,12 @@
 const data = [
     {
+        date:         'April 5, 2021',
+        title:        'Tim Harford, author, "The Data Detective"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/102661',
+        bookAnchor:   'https://timharford.com/books/datadetective/',
+        bookImageSrc: 'https://timharford.com/wp-content/uploads/2020/11/data-detective.png',
+    },
+    {
         date:         'March 22, 2021',
         title:        'Paul Kingsnorth, author, "Alexandria"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/102231',
