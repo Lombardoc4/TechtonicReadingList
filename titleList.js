@@ -1,5 +1,12 @@
 const data = [
     {
+        date:         'April 19, 2021',
+        title:        'Bob Ostertag, musician and author, "Facebooking the Anthropocene in Raja Ampat"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/103086',
+        bookAnchor:   'https://pmpress.org/index.php?l=product_detail&p=1142',
+        bookImageSrc: 'https://pmpress.org/images/products/large_1142_facebooking_the_anthropocene.jpg',
+    },
+    {
         date:         'April 5, 2021',
         title:        'Tim Harford, author, "The Data Detective"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/102661',
@@ -60,7 +67,7 @@ const data = [
         title:        'Station Manager Ken with Poet and Author Elisa Gabbert on Doomscrolling, Contagious Conversion Disorder and More',
         showAnchor:   'https://www.wfmu.org/playlists/shows/99544',
         bookAnchor:   'http://www.elisagabbert.com/the-unreality-of-memory/',
-        bookImageSrc: 'https://pbs.twimg.com/media/EttsJnnXAAU4_U3?format=jpg&name=small',
+        bookImageSrc: './img/TheUnrealityOfMemory.jpg',
     },
     {
         date:         'November 30, 2020',
