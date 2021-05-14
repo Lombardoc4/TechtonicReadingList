@@ -50,7 +50,7 @@
     }
 
     const checkWindowSize = () => {
-        console.log(window.innerWidth);
+        // console.log(window.innerWidth);
         if (window.innerWidth < 720)
             document.getElementById('booklist').classList.add('mobile');
         else
