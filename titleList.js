@@ -1,5 +1,26 @@
 const data = [
     {
+        date:         'May 10, 2021',
+        title:        'Pete Davis, author, "Dedicated"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/103744',
+        bookAnchor:   'https://www.indiebound.org/book/9781982140908',
+        bookImageSrc: 'https://images.booksense.com/images/908/140/9781982140908.jpg',
+    },
+    {
+        date:         'May 3, 2021',
+        title:        'Frank Pasquale, author, "New Laws of Robotics"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/103517',
+        bookAnchor:   'https://www.hup.harvard.edu/catalog.php?isbn=9780674975224',
+        bookImageSrc: 'https://www.hup.harvard.edu/images/jackets/9780674975224-lg.jpg',
+    },
+    {
+        date:         'April 26, 2021',
+        title:        'Dennis Glover, author, "Factory 19"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/103307',
+        bookAnchor:   'https://www.blackincbooks.com.au/books/factory-19',
+        bookImageSrc: 'https://www.blackincbooks.com.au/sites/default/files/styles/book_large/public/Factory%2019%20%28online%29%20%281%29.jpg',
+    },
+    {
         date:         'April 19, 2021',
         title:        'Bob Ostertag, musician and author, "Facebooking the Anthropocene in Raja Ampat"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/103086',
