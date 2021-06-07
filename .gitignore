@@ -1,2 +1,4 @@
-/node_modules
-/og
+node_modules
+og
+
+getList.js
