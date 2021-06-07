@@ -1,5 +1,12 @@
 const data = [
     {
+        date:         'June 7, 2021',
+        title:        'Amelia Pang, author, "Made in China," on forced labor creating American products',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/104586',
+        bookAnchor:   'https://www.indiebound.org/book/9781616209179',
+        bookImageSrc: 'https://images.booksense.com/images/179/209/9781616209179.jpg',
+    },
+    {
         date:         'May 10, 2021',
         title:        'Pete Davis, author, "Dedicated"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/103744',
