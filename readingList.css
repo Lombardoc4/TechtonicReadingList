@@ -1,3 +1,7 @@
+body{
+    background-color: #99CCFF;
+}
+
 #booklist{
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +15,14 @@
     width: 160px;
     box-shadow: 0 10px 5px -5px grey;
     margin: 2em 0;
+}
+
+a.preloader{
+    background-image: url(./img/preloader.gif);
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .bookEntry{
@@ -27,4 +39,8 @@
 
 #booklist.mobile .bookEntry{
     width: 80%;
+}
+
+.d-none{
+    display: none;
 }

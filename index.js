@@ -21,9 +21,11 @@
 
         const bookImageLink = bookLink.cloneNode();
 
+        bookImageLink.classList.add('preloader');
         const bookImg = document.createElement('img');
         bookImg.classList.add('bookImg');
         bookImg.src = bookImageSrc;
+        bookImg.onload = () => bookImageLink.classList.remove('preloader');
 
         bookImageLink.appendChild(bookImg);
 

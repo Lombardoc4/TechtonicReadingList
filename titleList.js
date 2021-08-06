@@ -1,4 +1,26 @@
 const data = [
+
+    {
+        date:         'June 7, 2021',
+        title:        'Craig Taylor, author, "New Yorkers: A City and Its People in Our Time"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/105971',
+        bookAnchor:   'https://www.indiebound.org/book/9781541730670',
+        bookImageSrc: 'https://images.booksense.com/images/670/730/9781541730670.jpg',
+    },
+    {
+        date:         'July 12, 2021',
+        title:        'Annette LeMay Burke, photographer and author, "Fauxliage"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/105743',
+        bookAnchor:   'http://atelierlemay.com/book/index.html',
+        bookImageSrc: 'https://d11pj51h4ledry.cloudfront.net/wp-content/uploads/2021/03/29135720/Annette_LeMay_Burke_Fauxliage_Book.jpg',
+    },
+    {
+        date:         'June 28, 2021',
+        title:        'Craig Taylor, author, "New Yorkers: A City and Its People in Our Time"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/105312',
+        bookAnchor:   'https://www.indiebound.org/book/9780393242324',
+        bookImageSrc: 'https://images.booksense.com/images/324/242/9780393242324.jpg',
+    },
     {
         date:         'June 7, 2021',
         title:        'Amelia Pang, author, "Made in China," on forced labor creating American products',
