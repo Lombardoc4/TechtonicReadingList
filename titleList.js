@@ -1,7 +1,7 @@
 const data = [
 
     {
-        date:         'June 7, 2021',
+        date:         'June 19, 2021',
         title:        'Craig Taylor, author, "New Yorkers: A City and Its People in Our Time"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/105971',
         bookAnchor:   'https://www.indiebound.org/book/9781541730670',

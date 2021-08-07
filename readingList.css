@@ -1,6 +1,16 @@
-body{
-    background-color: #99CCFF;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+header{
+    padding: 1em 1em 0;
+    text-align: center;
+}
+
 
 #booklist{
     display: flex;
@@ -11,10 +21,31 @@ body{
     max-width: 1000px;
 }
 
+#booklist.mobile .bookEntry{
+    display: flex;
+    width: 100%;
+}
+
+.bookEntry{
+    display: flex;
+    width: calc(50% - 4em);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em 1em 0;
+    padding: 1em;
+    background-color: #99CCFF;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px -10px grey;
+}
+
+#booklist.mobile .bookImg{
+    width: 100px;
+}
+
 .bookImg{
-    width: 160px;
-    box-shadow: 0 10px 5px -5px grey;
-    margin: 2em 0;
+    height: 250px;
+    box-shadow: 0 10px 25px -10px grey;
 }
 
 a.preloader{
@@ -25,21 +56,36 @@ a.preloader{
 
 }
 
-.bookEntry{
-    display: flex;
-    align-items: center;
-    width: 50%;
-}
-
 .showInfo{
-    padding: 2em 2em 2em 1em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.showCopy {
+    padding: 0.5em;
+}
+
+.btn-group{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    color: #FF0000;
+    padding: 0.5em 1em;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 10px 25px -10px grey;
 
 }
 
 
-#booklist.mobile .bookEntry{
+/* #booklist.mobile .bookEntry{
     width: 80%;
-}
+} */
 
 .d-none{
     display: none;
