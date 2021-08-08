@@ -11,12 +11,77 @@
 <body>
     <!-- <img src="img/preloader.gif"> -->
     <header>
-       <h1>Mark Hurst Reading&nbsp;List</h1>
+       <h1>Techtonic Reading&nbsp;List</h1>
+       <br>
+       <p>
+            <a href="https://wfmu.org/playlists/TD" target="_blank">Techtonic</a> is a show on a NJ local radio station, <a href="https://wfmu.org/" target="_blank">WFMU</a>, hosted by Mark&nbsp;Hurst.
+            He&nbsp;describes his show as,
+            <br><i>"Conversations with creators and thinkers who are charting the way forward in a tech-saturated society.
+            Tech, community, video games, and whatever else is next."</i>
+        </p>
+        <br>
+        <p>
+           This reading list is composed of all books discusses on the show.
+        </p>
     </header>
     <section id="booklist">
     </section>
 
     <script src="./titleList.js"></script>
     <script src="./index.js"></script>
+
+    <!-- Cris Lombardo Tag -->
+    <style>
+        .lom-container{
+        text-decoration: none;
+            display: flex;
+            align-items: center;
+            width: 175px;
+
+            position: fixed;
+            bottom: 1em;
+            right: 1em;
+
+            background-color: #000000;
+            border-radius: 50px;
+        }
+
+        .lom-container H1{
+            font-size: 1.25em;
+            color: #ffffff;
+            /* font-style: italic; */
+            font-family: 'Courier Next', courier, monospace;
+            /* font-family: 'helvetica neue', helvetica, sans-serif; */
+        }
+        .lom-img-container{
+            margin: .5em 0.75em;
+            height: 50px;
+            width: 50px;
+
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+        .lom-img-container img{
+            width: 100%;
+            /* animation: imgRotate 10s linear infinite; */
+
+        }
+
+        @keyframes imgRotate {
+            0% {transform: rotate(0deg);}
+            100% {transform: rotate(360deg);}
+        }
+    </style>
+
+    <a href="https://crislombardo.com" target="_blank" class="lom-container">
+        <div class="lom-img-container">
+            <img src="https://avatars.githubusercontent.com/u/36197748?v=4">
+        </div>
+        <h1>
+            Sirc<br>
+            Studios
+        </h1>
+    </a>
 </body>
 </html>

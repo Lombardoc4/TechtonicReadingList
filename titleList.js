@@ -2,7 +2,7 @@ const data = [
 
     {
         date:         'June 19, 2021',
-        title:        'Craig Taylor, author, "New Yorkers: A City and Its People in Our Time"',
+        title:        'Jon Fasman, author, "We See It All" ',
         showAnchor:   'https://www.wfmu.org/playlists/shows/105971',
         bookAnchor:   'https://www.indiebound.org/book/9781541730670',
         bookImageSrc: 'https://images.booksense.com/images/670/730/9781541730670.jpg',
