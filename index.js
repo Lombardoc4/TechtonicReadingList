@@ -32,7 +32,7 @@
             const bookLink = document.createElement('a');
             bookLink.innerHTML = 'Book Link';
             bookLink.href = bookAnchor;
-            bookLink.role = 'button';
+            bookLink.target = '_blank';
 
             const btnGroup = document.createElement('div');
             btnGroup.classList.add('btn-group');
@@ -40,13 +40,14 @@
             const bookImageLink = bookLink.cloneNode();
             bookLink.classList.add('btn');
 
-            bookImageLink.classList.add('preloader');
+            bookImageLink.classList.add('preloader', 'imgLink');
             const bookImg = document.createElement('img');
             bookImg.classList.add('bookImg');
             bookImg.src = bookImageSrc;
             bookImg.onload = () => bookImageLink.classList.remove('preloader');
 
             bookImageLink.appendChild(bookImg);
+            bookImageLink.append(showCopy);
 
             const bookEntry = document.createElement('div');
             bookEntry.classList.add('bookEntry');
@@ -59,11 +60,10 @@
             showCopy.append(showDate);
             btnGroup.append(bookLink);
             btnGroup.append(showLink);
-            showInfo.append(showCopy);
-            showInfo.append(btnGroup);
+            // showInfo.append(btnGroup);
 
             bookEntry.append(bookImageLink);
-            bookEntry.append(showInfo);
+            bookEntry.append(btnGroup);
 
             const bookList = document.getElementById('booklist');
             bookList.append(bookEntry);

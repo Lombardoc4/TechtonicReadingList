@@ -7,7 +7,7 @@
 }
 
 header{
-    padding: 1em 1em 0;
+    padding: 1em 2em 0;
     /* text-align: center; */
     max-width: 600px;
     margin: auto;
@@ -31,14 +31,14 @@ header h1{
 #booklist.mobile .bookEntry{
     display: flex;
     width: 100%;
-    margin: 1em 1em 0;
+    margin: 1em 2em;
 }
 
 .bookEntry{
     display: flex;
-    width: calc(50% - 4em);
+    width: calc(33% - 4em);
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: 1em;
     padding: 1em;
@@ -48,13 +48,24 @@ header h1{
 }
 
 #booklist.mobile .bookImg{
-    height: auto;
-    width: 100px;
+    /* width: 100px; */
 }
 
 .bookImg{
-    height: 250px;
+    /* max-height: 150px; */
+    width: 100%;
+    margin: auto;
     box-shadow: 0 10px 25px -10px grey;
+}
+
+a.imgLink{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 2em; */
+    width: 100%;
+    color: #000000;
+    text-decoration: none;
 }
 
 a.preloader{
@@ -64,17 +75,13 @@ a.preloader{
     background-repeat: no-repeat;
 }
 
-.showInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .showCopy {
     padding: 0.5em;
 }
 
 .btn-group{
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
