@@ -1,5 +1,18 @@
 const data = [
-
+    {
+        date:         'August 23, 2021',
+        title:        'Shannon Mattern, author, "A City Is Not A Computer"',
+        showAnchor:   'https://www.wfmu.org/playlists/TD',
+        bookAnchor:   'https://www.indiebound.org/book/9780691208053',
+        bookImageSrc: 'https://images.booksense.com/images/053/208/9780691208053.jpg',
+    },
+    {
+        date:         'August 16, 2021',
+        title:        'The WeWork fiasco - with Eliot Brown, author, "The Cult of We"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/106894',
+        bookAnchor:   'https://www.indiebound.org/book/9780593237113',
+        bookImageSrc: 'https://images.booksense.com/images/113/237/9780593237113.jpg',
+    },
     {
         date:         'June 19, 2021',
         title:        'Jon Fasman, author, "We See It All" ',
