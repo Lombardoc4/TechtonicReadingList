@@ -43,11 +43,14 @@
             bookImageLink.classList.add('preloader', 'imgLink');
             const bookImg = document.createElement('img');
             bookImg.classList.add('bookImg');
+            bookImg.style.height = '0';
             bookImg.src = bookImageSrc;
-            bookImg.onload = () => bookImageLink.classList.remove('preloader');
+            bookImg.onload = () => {
+                bookImg.style.height = 'auto';
+                bookImageLink.classList.remove('preloader');
+            };
 
             bookImageLink.appendChild(bookImg);
-            bookImageLink.append(showCopy);
 
             const bookEntry = document.createElement('div');
             bookEntry.classList.add('bookEntry');
@@ -63,6 +66,7 @@
             // showInfo.append(btnGroup);
 
             bookEntry.append(bookImageLink);
+            // bookEntry.append(showCopy);
             bookEntry.append(btnGroup);
 
             const bookList = document.getElementById('booklist');

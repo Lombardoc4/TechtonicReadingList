@@ -36,12 +36,12 @@ header h1{
 
 .bookEntry{
     display: flex;
-    width: calc(33% - 4em);
+    width: calc(33% - 3em);
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    margin: 1em;
-    padding: 1em;
+    margin: 1.5em;
+    padding: 1.5em;
     background-color: #99CCFF;
     border-radius: 5px;
     box-shadow: 0 10px 25px -10px grey;
@@ -55,15 +55,19 @@ header h1{
     /* max-height: 150px; */
     width: 100%;
     margin: auto;
+
     box-shadow: 0 10px 25px -10px grey;
 }
 
 a.imgLink{
+    /* max-height: 300px; */
+    /* object-fit: cover; */
     /* text-align: center; */
     display: flex;
     flex-direction: column;
     /* padding-bottom: 2em; */
     width: 100%;
+    margin-bottom: 1em;
     color: #000000;
     text-decoration: none;
 }
@@ -73,6 +77,9 @@ a.preloader{
     background-size: 30px 30px;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 50px;
+    display: block;
 }
 
 
