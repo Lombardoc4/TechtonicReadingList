@@ -6,11 +6,19 @@
     padding: 0;
 }
 
+body{
+    background-color: #99CCFF;
+}
+
 header{
     padding: 1em 2em 0;
     /* text-align: center; */
     max-width: 600px;
     margin: auto;
+}
+
+header.sm{
+    max-width: 400px;
 }
 
 header h1{
@@ -28,23 +36,27 @@ header h1{
     max-width: 1000px;
 }
 
-#booklist.mobile .bookEntry{
-    display: flex;
+#booklist.sm .bookEntry{
+
+    /* display: flex; */
     width: 100%;
-    margin: 1em 2em;
+    margin: 0.5em 3em;
+    /* padding: 1em 2em; */
+}
+
+
+#booklist.md .bookEntry{
+    /* display: flex; */
+    width: calc(50% - 4em);
+    padding: 0 2em;
 }
 
 .bookEntry{
     display: flex;
     width: calc(33% - 3em);
     flex-direction: column;
-    justify-content: end;
-    align-items: center;
     margin: 1.5em;
     padding: 1.5em;
-    background-color: #99CCFF;
-    border-radius: 5px;
-    box-shadow: 0 10px 25px -10px grey;
 }
 
 #booklist.mobile .bookImg{

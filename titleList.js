@@ -427,7 +427,7 @@ const data = [
         title:        'Rex Sorgatz, author, "The Encyclopedia of Misinformation"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/82932',
         bookAnchor:   'https://www.abramsbooks.com/product/encyclopedia-of-misinformation_9781419729119/',
-        bookImageSrc: 'https://www.abramsbooks.com/wp-content/uploads/2018/05/9781419729119.IN01.jpg',
+        bookImageSrc: 'https://www.abramsbooks.com/cover_images/9/9781419729119_s3.jpg',
     },
     {
         date:         'November 26, 2018',
