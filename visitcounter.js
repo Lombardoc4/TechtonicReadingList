@@ -1,6 +1,6 @@
 (() => {
     window.onload = () => {
-        fetch('https://usnativeplants.com/visitor-counter/Techtonic')
+        fetch('https://usnativeplants.com/visitor-counter/techtonic')
             .then(response => response.json())
             .then((data) => {
                 const visitCounter = document.createElement('p');
