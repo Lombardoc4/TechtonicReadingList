@@ -7,6 +7,7 @@
 }
 
 body{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     background-color: #99CCFF;
 }
 
@@ -40,8 +41,13 @@ header h1{
 
     /* display: flex; */
     width: 100%;
-    margin: 0.5em 3em;
+    margin: 0.5em 2em 0;
+    border-bottom: 1px solid grey;
     /* padding: 1em 2em; */
+}
+
+#booklist.sm .imgLink{
+    padding: 0 2em 1em ;
 }
 
 

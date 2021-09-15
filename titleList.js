@@ -2,9 +2,9 @@ const data = [
     {
         date:         'August 23, 2021',
         title:        'Shannon Mattern, author, "A City Is Not A Computer"',
-        showAnchor:   'https://www.wfmu.org/playlists/TD',
-        bookAnchor:   'https://www.indiebound.org/book/9780691208053',
-        bookImageSrc: 'https://images.booksense.com/images/053/208/9780691208053.jpg',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/107151',
+        bookAnchor:   'https://press.princeton.edu/books/paperback/9780691208053/a-city-is-not-a-computer',
+        bookImageSrc: 'https://pup-assets.imgix.net/onix/images/9780691208053.jpg?w=410&auto=format',
     },
     {
         date:         'August 16, 2021',
