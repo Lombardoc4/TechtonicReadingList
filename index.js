@@ -1,6 +1,7 @@
 (() => {
     const crawlData = data;
 
+
     const checkWindowSize = () => {
         const resizeContainers = ['#booklist', 'header'];
 
@@ -21,7 +22,7 @@
     const loadCards = async () => {
         let i = 0;
         while (i < crawlData.length) {
-            const { date, title, showAnchor, bookAnchor, bookImageSrc } = crawlData[i];
+            const { date, title, showAnchor, bookAnchor } = crawlData[i];
 
             const showTitle = document.createElement('h1');
             showTitle.innerHTML = title;
@@ -123,11 +124,11 @@
     };
 
     window.onresize = () => checkWindowSize();
-    window.onload = async () => {
+    window.addEventListener('load', async () => {
         await loadCards();
         checkWindowSize();
         lazyAddImage();
-    };
+    });
     window.onscroll = () => {
         lazyAddImage();
     };

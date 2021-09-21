@@ -2,11 +2,11 @@
     window.onload = () => {
         fetch('https://usnativeplants.com/visitor-counter/techtonic')
             .then(response => response.json())
-            .then((data) => {
+            .then((visitData) => {
                 const visitCounter = document.createElement('p');
                 visitCounter.id = 'visitCounter';
                 visitCounter.style.display = 'none';
-                visitCounter.innerHTML = data.visitCount;
+                visitCounter.innerHTML = visitData.visitCount;
                 document.body.append(visitCounter);
             });
     };
