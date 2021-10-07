@@ -1,5 +1,5 @@
 (() => {
-    window.onload = () => {
+    window.addEventListener('load', () => {
         fetch('https://usnativeplants.com/visitor-counter/techtonic')
             .then(response => response.json())
             .then((visitData) => {

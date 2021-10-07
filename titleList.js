@@ -1,4 +1,18 @@
 const data = [
+    // {
+    //     date:         'October 11, 2021',
+    //     title:        'David Bodanis, author of "The Art of Fairness"',
+    //     showAnchor:   'https://www.wfmu.org/playlists/shows/108276',
+    //     bookAnchor:   'https://www.indiebound.org/book/9780300248036',
+    //     bookImageSrc: 'https://images.booksense.com/images/036/248/9780300248036.jpg',
+    // },
+    {
+        date:         'September 27, 2021',
+        title:        'Joe Turow, author, "The Voice Catchers"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/108276',
+        bookAnchor:   'https://www.indiebound.org/book/9780300248036',
+        bookImageSrc: 'https://images.booksense.com/images/036/248/9780300248036.jpg',
+    },
     {
         date:         'August 23, 2021',
         title:        'Shannon Mattern, author, "A City Is Not A Computer"',
