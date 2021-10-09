@@ -9,5 +9,5 @@
                 visitCounter.innerHTML = visitData.visitCount;
                 document.body.append(visitCounter);
             });
-    };
+    });
 })();
