@@ -1,11 +1,18 @@
 const data = [
-    // {
-    //     date:         'October 11, 2021',
-    //     title:        'David Bodanis, author of "The Art of Fairness"',
-    //     showAnchor:   'https://www.wfmu.org/playlists/shows/108276',
-    //     bookAnchor:   'https://www.indiebound.org/book/9780300248036',
-    //     bookImageSrc: 'https://images.booksense.com/images/036/248/9780300248036.jpg',
-    // },
+    {
+        date:         'November 1, 2021',
+        title:        'David Yoon, author, "Version Zero"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/109323',
+        bookAnchor:   'https://www.indiebound.org/book/9780593190357',
+        bookImageSrc: 'https://images.booksense.com/images/357/190/9780593190357.jpg',
+    },
+    {
+        date:         'October 11, 2021',
+        title:        'David Bodanis, author of "The Art of Fairness"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/108697',
+        bookAnchor:   'https://www.abramsbooks.com/product/art-of-fairness_9781419756351/',
+        bookImageSrc: 'https://www.abramsbooks.com/cover_images/1/9781419756351_s3.jpg',
+    },
     {
         date:         'September 27, 2021',
         title:        'Joe Turow, author, "The Voice Catchers"',
