@@ -1,4 +1,12 @@
 const data = [
+
+    {
+        date:         'November 8, 2021: ',
+        title:        'Tyson Yunkaporta, author, "Sand Talk"',
+        showAnchor:   'https://wfmu.org/playlists/shows/109486',
+        bookAnchor:   'https://www.indiebound.org/book/9780062975621',
+        bookImageSrc: 'https://images.booksense.com/images/621/975/9780062975621.jpg',
+    },
     {
         date:         'November 1, 2021',
         title:        'David Yoon, author, "Version Zero"',
