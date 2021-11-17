@@ -1,7 +1,13 @@
 const data = [
-
     {
-        date:         'November 8, 2021: ',
+        date:         'November 15, 2021 ',
+        title:        'Tyson Yunkaporta, author, "Sand Talk"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/109787',
+        bookAnchor:   'https://www.indiebound.org/book/9781737589709',
+        bookImageSrc: 'https://images.booksense.com/images/709/589/9781737589709.jpg',
+    },
+    {
+        date:         'November 8, 2021',
         title:        'Tyson Yunkaporta, author, "Sand Talk"',
         showAnchor:   'https://wfmu.org/playlists/shows/109486',
         bookAnchor:   'https://www.indiebound.org/book/9780062975621',
