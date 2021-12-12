@@ -469,7 +469,7 @@ const data = [
         title:        'Jonathan Tepper, author, "The Myth of Capitalism"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/82666',
         bookAnchor:   'https://www.mythofcapitalism.com/',
-        bookImageSrc: 'http://blogfiles.wfmu.org/TD/2018/11/26/mythofcapitalism.jpg',
+        bookImageSrc: 'https://images.booksense.com/images/195/548/9781119548195.jpg',
     },
     {
         date:         'November 19, 2018',
