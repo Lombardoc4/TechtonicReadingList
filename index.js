@@ -43,6 +43,8 @@
             bookLink.innerHTML = 'Book Link';
             bookLink.href = bookAnchor;
             bookLink.target = '_blank';
+            bookLink.rel= 'noreferrer';
+
 
             const btnGroup = document.createElement('div');
             btnGroup.classList.add('btn-group');
@@ -104,6 +106,7 @@
                 const bookImageLink = document.createElement('a');
                 bookImageLink.href = data[id].bookAnchor;
                 bookImageLink.target = '_blank';
+                bookImageLink.rel= 'noreferrer';
                 bookImageLink.classList.add('preloader', 'imgLink');
                 const bookImg = document.createElement('img');
                 bookImg.classList.add('bookImg');
