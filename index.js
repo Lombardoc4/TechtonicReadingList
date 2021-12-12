@@ -107,7 +107,7 @@
                 bookImageLink.classList.add('preloader', 'imgLink');
                 const bookImg = document.createElement('img');
                 bookImg.classList.add('bookImg');
-                bookImg.alt = data[id].title
+                bookImg.alt = data[id].title;
                 bookImg.style.height = '0';
                 bookImg.src = data[id].bookImageSrc;
                 bookImg.onload = () => {
