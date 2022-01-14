@@ -1,5 +1,19 @@
 const data = [
     {
+        date:         'January 17, 2022',
+        title:        'Darren Byler, author, "In the Camps"',
+        showAnchor:   '#',
+        bookAnchor:   'https://www.indiebound.org/book/9781735913629',
+        bookImageSrc: 'https://images.booksense.com/images/629/913/9781735913629.jpg',
+    },
+    {
+        date:         'December 27, 2021',
+        title:        'Mark Schatzker, author, "The End of Craving"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/111128',
+        bookAnchor:   'https://www.indiebound.org/book/9781501192470',
+        bookImageSrc: 'https://images.booksense.com/images/470/192/9781501192470.jpg',
+    },
+    {
         date:         'November 15, 2021 ',
         title:        'Tyson Yunkaporta, author, "Sand Talk"',
         showAnchor:   'https://www.wfmu.org/playlists/shows/109787',
