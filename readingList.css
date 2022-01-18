@@ -9,35 +9,45 @@
 body{
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     background-color: #99CCFF;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+body.sm, body.md{
+    flex-direction: column;
+}
+
+.sm header, .md header{
+    position: initial;
+    width: 100%;
 }
 
 header{
+    position: sticky;
+    top: 1em;
+    width: 20%;
     padding: 1em 2em 0;
     /* text-align: center; */
-    max-width: 600px;
-    margin: auto;
+    /* max-width: 600px; */
+    /* margin: auto; */
 }
 
-header.sm{
-    max-width: 400px;
+.sm #booklist, .md #booklist{
+    width: 100%;
 }
-
-header h1{
-    text-align: center;
-}
-
-
 
 #booklist{
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
 
-    margin: auto;
+    align-items: baseline;
     justify-content: center;
-    max-width: 1000px;
 }
 
-#booklist.sm .bookEntry{
+.sm .bookEntry{
 
     /* display: flex; */
     width: 100%;
@@ -46,12 +56,12 @@ header h1{
     /* padding: 1em 2em; */
 }
 
-#booklist.sm .imgLink{
+.sm .imgLink{
     padding: 0 2em 1em ;
 }
 
 
-#booklist.md .bookEntry{
+.md .bookEntry{
     /* display: flex; */
     width: calc(50% - 4em);
     padding: 0 2em;
@@ -59,14 +69,10 @@ header h1{
 
 .bookEntry{
     display: flex;
-    width: calc(33% - 3em);
+    width: calc(25% - 3em);
     flex-direction: column;
-    margin: 1.5em;
-    padding: 1.5em;
-}
-
-#booklist.mobile .bookImg{
-    /* width: 100px; */
+    margin: 1.5em 1em;
+    padding: 1em ;
 }
 
 .bookImg{
@@ -83,6 +89,7 @@ a.imgLink{
     /* text-align: center; */
     display: flex;
     flex-direction: column;
+    text-align: center;
     /* padding-bottom: 2em; */
     width: 100%;
     margin-bottom: 1em;
@@ -108,6 +115,7 @@ a.preloader{
 .btn-group{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -118,7 +126,8 @@ a.preloader{
     border-radius: 5px;
     background-color: white;
     box-shadow: 0 10px 25px -10px grey;
-
+    margin: 0.5em;
+    text-align: center;
 }
 
 

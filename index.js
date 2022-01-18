@@ -3,7 +3,7 @@
 
 
     const checkWindowSize = () => {
-        const resizeContainers = ['#booklist', 'header'];
+        const resizeContainers = ['#booklist', 'body'];
 
         let i = 0;
         while (i < resizeContainers.length) {
