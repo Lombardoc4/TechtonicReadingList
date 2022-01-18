@@ -71,8 +71,8 @@ header{
     display: flex;
     width: calc(25% - 3em);
     flex-direction: column;
-    margin: 1.5em 1em;
-    padding: 1em ;
+    margin: 1em;
+    padding: 0 1em;
 }
 
 .bookImg{
