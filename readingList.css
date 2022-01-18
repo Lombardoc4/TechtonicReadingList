@@ -51,13 +51,13 @@ header{
 
     /* display: flex; */
     width: 100%;
-    margin: 0.5em 2em 0;
+    margin: 1em 2em;
     border-bottom: 1px solid grey;
-    /* padding: 1em 2em; */
+    padding: 1em 1em 2em;
 }
 
 .sm .imgLink{
-    padding: 0 2em 1em ;
+    padding: 0 2em;
 }
 
 
