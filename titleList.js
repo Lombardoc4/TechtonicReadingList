@@ -1,8 +1,22 @@
 const data = [
     {
+        date:         'February 21, 2022',
+        title:        'Kelly Weill, author, "Off the Edge: Flat Earthers, Conspiracy Culture, and Why People Will Believe Anything"',
+        showAnchor:   'https://wfmu.org/playlists/shows/112917',
+        bookAnchor:   'https://www.indiebound.org/book/9781643750682',
+        bookImageSrc: 'https://images.booksense.com/images/682/750/9781643750682.jpg',
+    },
+    {
+        date:         'February 7, 2022',
+        title:        'Alec MacGillis, author, "Fulfillment: Winning and Losing in One-Click America"',
+        showAnchor:   'https://wfmu.org/playlists/shows/112493',
+        bookAnchor:   'https://www.indiebound.org/book/9780374159276',
+        bookImageSrc: 'https://images.booksense.com/images/276/159/9780374159276.jpg',
+    },
+    {
         date:         'January 17, 2022',
         title:        'Darren Byler, author, "In the Camps"',
-        showAnchor:   '#',
+        showAnchor:   'https://wfmu.org/playlists/shows/111772',
         bookAnchor:   'https://www.indiebound.org/book/9781735913629',
         bookImageSrc: 'https://images.booksense.com/images/629/913/9781735913629.jpg',
     },
