@@ -1,5 +1,19 @@
 const data = [
     {
+        date:         'April 11, 2022',
+        title:        'Sasha Stiles, poet and artist, on her book "Technelegy"',
+        showAnchor:   'https://wfmu.org/playlists/shows/114436',
+        bookAnchor:   'https://blackspringpressgroup.com/products/technelegy',
+        bookImageSrc: 'https://cdn.shopify.com/s/files/1/0985/7354/products/Cover_Stiles_pre_1200x.jpg?v=1627557139',
+    },
+    {
+        date:         'April 4, 2022',
+        title:        'Justin E. H. Smith, author, "The Internet Is Not What You Think It Is"',
+        showAnchor:   'https://wfmu.org/playlists/shows/114234',
+        bookAnchor:   'https://www.indiebound.org/book/9780691212326',
+        bookImageSrc: 'https://images.booksense.com/images/326/212/9780691212326.jpg',
+    },
+    {
         date:         'February 21, 2022',
         title:        'Kelly Weill, author, "Off the Edge: Flat Earthers, Conspiracy Culture, and Why People Will Believe Anything"',
         showAnchor:   'https://wfmu.org/playlists/shows/112917',
