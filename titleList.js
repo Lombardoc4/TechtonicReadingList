@@ -1,5 +1,12 @@
 const data = [
     {
+        date:         'May 9, 2022',
+        title:        'Carolyn Chen, author, "Work Pray Code: When Work Becomes Religion in Silicon Valley"',
+        showAnchor:   'https://wfmu.org/playlists/shows/115544',
+        bookAnchor:   'https://www.indiebound.org/book/9780691219080',
+        bookImageSrc: 'https://images.booksense.com/images/080/219/9780691219080.jpg',
+    },
+    {
         date:         'April 11, 2022',
         title:        'Sasha Stiles, poet and artist, on her book "Technelegy"',
         showAnchor:   'https://wfmu.org/playlists/shows/114436',
