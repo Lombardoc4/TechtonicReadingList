@@ -1,5 +1,19 @@
 const data = [
     {
+        date:         'June 13, 2022',
+        title:        'Jennifer Egan, author, "The Candy House"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/116690',
+        bookAnchor:   'https://jenniferegan.com/',
+        bookImageSrc: 'https://images.booksense.com/images/763/716/9781476716763.jpg',
+    },
+    {
+        date:         'May 30, 2022',
+        title:        'Jeff Deutsch, author, "In Praise of Good Bookstores"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/116196',
+        bookAnchor:   'https://press.princeton.edu/books/hardcover/9780691207766/in-praise-of-good-bookstores',
+        bookImageSrc: 'https://pup-assets.imgix.net/onix/images/9780691207766.jpg?w=1500&auto=format',
+    },
+    {
         date:         'May 9, 2022',
         title:        'Carolyn Chen, author, "Work Pray Code: When Work Becomes Religion in Silicon Valley"',
         showAnchor:   'https://wfmu.org/playlists/shows/115544',
