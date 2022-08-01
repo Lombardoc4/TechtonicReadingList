@@ -22,13 +22,18 @@ body.sm, body.md{
 .sm header, .md header{
     position: initial;
     width: 100%;
+    margin-left: 0;
+    
 }
 
 header{
+    
     position: sticky;
     top: 1em;
     width: 20%;
-    padding: 1em 2em 0;
+    padding: 1em 2em;
+    background-color: #ffffff;
+    margin-left: 2em;
     /* text-align: center; */
     /* max-width: 600px; */
     /* margin: auto; */
