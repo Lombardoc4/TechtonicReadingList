@@ -1,5 +1,40 @@
 const data = [
     {
+        date:         'July 25, 2022',
+        title:        'Paris Marx, author, "Road to Nowhere: What Silicon Valley Gets Wrong about the Future of Transportation"',
+        showAnchor:   'https://wfmu.org/playlists/shows/117967',
+        bookAnchor:   'https://www.versobooks.com/books/3995-road-to-nowheree',
+        bookImageSrc: 'https://cdn-ed.versobooks.com/images/000016/335/9781839765889-3b28f9aa5a46b802d7808eb0ace1b06e.jpg',
+    },
+    {
+        date:         'July 18, 2022',
+        title:        'Ben Tarnoff, author, "Internet for the People"',
+        showAnchor:   'https://wfmu.org/playlists/shows/117816',
+        bookAnchor:   'https://www.versobooks.com/books/3927-internet-for-the-people',
+        bookImageSrc: 'https://cdn-ed.versobooks.com/images/000015/906/9781839762024-ebf8b39b639224180effcdd0266a448a.jpg',
+    },
+    {
+        date:         'June 27, 2022',
+        title:        'Jonathan Crary, author, "Scorched Earth: Beyond the Digital Age to a Post-Capitalist World"',
+        showAnchor:   'https://wfmu.org/playlists/shows/117145',
+        bookAnchor:   'https://www.versobooks.com/books/3965-scorched-earth',
+        bookImageSrc: 'https://cdn-ed.versobooks.com/images/000016/152/9781784784447-708f8f7584bda2efdb0514488e07f9cd.jpg',
+    },
+    {
+        date:         'June 13, 2022',
+        title:        'Jennifer Egan, author, "The Candy House"',
+        showAnchor:   'https://wfmu.org/playlists/shows/116690',
+        bookAnchor:   'https://www.indiebound.org/book/9781476716763',
+        bookImageSrc: 'https://images.booksense.com/images/763/716/9781476716763.jpg',
+    },
+    {
+        date:         'May 30, 2022',
+        title:        'Jeff Deutsch, author, "In Praise of Good Bookstores"',
+        showAnchor:   'https://wfmu.org/playlists/shows/116196',
+        bookAnchor:   'https://press.princeton.edu/books/hardcover/9780691207766/in-praise-of-good-bookstores',
+        bookImageSrc: 'https://pup-assets.imgix.net/onix/images/9780691207766.jpg?w=1500&auto=format',
+    },
+    {
         date:         'May 9, 2022',
         title:        'Carolyn Chen, author, "Work Pray Code: When Work Becomes Religion in Silicon Valley"',
         showAnchor:   'https://wfmu.org/playlists/shows/115544',
