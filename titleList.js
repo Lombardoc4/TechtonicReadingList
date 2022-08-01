@@ -1,5 +1,6 @@
 const data = [
     {
+<<<<<<< HEAD
         date:         'July 25, 2022',
         title:        'Paris Marx, author, "Road to Nowhere: What Silicon Valley Gets Wrong about the Future of Transportation"',
         showAnchor:   'https://wfmu.org/playlists/shows/117967',
@@ -25,12 +26,22 @@ const data = [
         title:        'Jennifer Egan, author, "The Candy House"',
         showAnchor:   'https://wfmu.org/playlists/shows/116690',
         bookAnchor:   'https://www.indiebound.org/book/9781476716763',
+=======
+        date:         'June 13, 2022',
+        title:        'Jennifer Egan, author, "The Candy House"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/116690',
+        bookAnchor:   'https://jenniferegan.com/',
+>>>>>>> 9fe83664db00187653337ec994122a900bc692d2
         bookImageSrc: 'https://images.booksense.com/images/763/716/9781476716763.jpg',
     },
     {
         date:         'May 30, 2022',
         title:        'Jeff Deutsch, author, "In Praise of Good Bookstores"',
+<<<<<<< HEAD
         showAnchor:   'https://wfmu.org/playlists/shows/116196',
+=======
+        showAnchor:   'https://www.wfmu.org/playlists/shows/116196',
+>>>>>>> 9fe83664db00187653337ec994122a900bc692d2
         bookAnchor:   'https://press.princeton.edu/books/hardcover/9780691207766/in-praise-of-good-bookstores',
         bookImageSrc: 'https://pup-assets.imgix.net/onix/images/9780691207766.jpg?w=1500&auto=format',
     },
