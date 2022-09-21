@@ -1,5 +1,19 @@
 const data = [
     {
+        date:         'September 19, 2022',
+        title:        'Aaron Sachs, author, "Up from the Depths" – on Melville, Mumford, and difficult times',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/119863',
+        bookAnchor:   'https://www.indiebound.org/book/9780691215419',
+        bookImageSrc: 'https://images.booksense.com/images/419/215/9780691215419.jpg',
+    },
+    {
+        date:         'August 8, 2022',
+        title:        'James Bridle, author, "Ways of Being"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/118497',
+        bookAnchor:   'https://us.macmillan.com/books/9780374601119/waysofbeing',
+        bookImageSrc: 'https://mpd-biblio-covers.imgix.net/9780374601119.jpg?w=900',
+    },
+    {
         date:         'July 25, 2022',
         title:        'Paris Marx, author, "Road to Nowhere: What Silicon Valley Gets Wrong about the Future of Transportation"',
         showAnchor:   'https://wfmu.org/playlists/shows/117967',
