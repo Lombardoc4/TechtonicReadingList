@@ -1,5 +1,19 @@
 const data = [
     {
+        date:         'October 24, 2022',
+        title:        'Adrian Hon, author, "You\'ve Been Played"',
+        showAnchor:   'https://wfmu.org/playlists/shows/120981',
+        bookAnchor:   'https://www.indiebound.org/book/9781541600171',
+        bookImageSrc: 'https://images.booksense.com/images/171/600/9781541600171.jpg',
+    },
+    {
+        date:         'Options October 3, 2022:',
+        title:        'Douglas Rushkoff on his new book, "Survival of the Richest: Escape Fantasies of the Tech Billionaires"',
+        showAnchor:   'https://wfmu.org/playlists/shows/120314',
+        bookAnchor:   'https://www.indiebound.org/book/9780393881066',
+        bookImageSrc: 'https://images.booksense.com/images/066/881/9780393881066.jpg',
+    },
+    {
         date:         'September 19, 2022',
         title:        'Aaron Sachs, author, "Up from the Depths" – on Melville, Mumford, and difficult times',
         showAnchor:   'https://www.wfmu.org/playlists/shows/119863',
