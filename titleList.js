@@ -1,5 +1,33 @@
 const data = [
     {
+        date:         'December 12, 2022',
+        title:        'Rachel Ignotofsky, author, "The History of the Computer"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/122648',
+        bookAnchor:   'https://www.indiebound.org/book/9781984857422',
+        bookImageSrc: 'https://images.booksense.com/images/422/857/9781984857422.jpg',
+    },
+    {
+        date:         'December 5, 2022',
+        title:        'On game design: Eric Zimmerman, author, "The Rules We Break"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/122380',
+        bookAnchor:   'https://www.indiebound.org/book/9781648960673',
+        bookImageSrc: 'https://images.booksense.com/images/673/960/9781648960673.jpg',
+    },
+    {
+        date:         'November 21, 2022',
+        title:        'David Sax, author, "The Future is Analog"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/121868',
+        bookAnchor:   'https://www.indiebound.org/book/9781541701557',
+        bookImageSrc: 'https://images.booksense.com/images/557/701/9781541701557.jpg',
+    },
+    {
+        date:         'November 7, 2022',
+        title:        'Carissa Véliz, author, "Privacy is Power"',
+        showAnchor:   'https://www.wfmu.org/playlists/shows/121426',
+        bookAnchor:   'https://www.indiebound.org/book/9781612199672',
+        bookImageSrc: 'https://images.booksense.com/images/672/199/9781612199672.jpg',
+    },
+    {
         date:         'October 24, 2022',
         title:        'Adrian Hon, author, "You\'ve Been Played"',
         showAnchor:   'https://wfmu.org/playlists/shows/120981',
