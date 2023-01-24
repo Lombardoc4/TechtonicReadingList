@@ -1,6 +1,5 @@
 (() => {
-    const crawlData = data;
-
+    let data = [];
 
     const checkWindowSize = () => {
         const resizeContainers = ['#booklist', 'body'];
@@ -9,11 +8,8 @@
         while (i < resizeContainers.length) {
             const container = document.querySelector(resizeContainers[i]);
             container.classList.remove('sm', 'md');
-
-            if (window.innerWidth < 666)
-                container.classList.add('sm');
-            if (window.innerWidth >= 666 && window.innerWidth < 992)
-                container.classList.add('md');
+            if (window.innerWidth < 992)
+                container.classList.add(window.innerWidth < 666 ? 'sm' : 'md');
 
             i += 1;
         }
@@ -21,8 +17,8 @@
 
     const loadCards = async () => {
         let i = 0;
-        while (i < crawlData.length) {
-            const { date, title, showAnchor, bookAnchor } = crawlData[i];
+        while (i < data.length) {
+            const { date, title, showAnchor, bookAnchor } = data[i];
 
             const showTitle = document.createElement('h1');
             showTitle.innerHTML = title;
@@ -43,48 +39,28 @@
             bookLink.innerHTML = 'Book Link';
             bookLink.href = bookAnchor;
             bookLink.target = '_blank';
-            bookLink.rel= 'noreferrer';
-
+            bookLink.rel = 'noreferrer';
+            bookLink.classList.add('btn');
 
             const btnGroup = document.createElement('div');
             btnGroup.classList.add('btn-group');
 
-            // const bookImageLink = bookLink.cloneNode();
-            bookLink.classList.add('btn');
-
-            // bookImageLink.classList.add('preloader', 'imgLink');
-            // const bookImg = document.createElement('img');
-            // bookImg.classList.add('bookImg');
-            // bookImg.style.height = '0';
-            // bookImg.src = bookImageSrc;
-            // bookImg.onload = () => {
-            //     bookImg.style.height = 'auto';
-            //     bookImageLink.classList.remove('preloader');
-            // };
-
-            // bookImageLink.appendChild(bookImg);
-
             const bookEntry = document.createElement('div');
-
             bookEntry.classList.add('bookEntry', 'lazy');
             bookEntry.dataset.entry = i;
 
             const showInfo = document.createElement('div');
             showInfo.classList.add('showInfo');
-            // showInfo.style.padding = '2em';
 
             showCopy.append(showTitle);
             showCopy.append(showDate);
             btnGroup.append(bookLink);
             btnGroup.append(showLink);
-            // showInfo.append(btnGroup);
 
-            // bookEntry.append(showCopy);
             bookEntry.append(btnGroup);
 
             const bookList = document.getElementById('booklist');
             bookList.append(bookEntry);
-
 
             i += 1;
         }
@@ -97,16 +73,15 @@
         let i = 0;
         while (i < allBooks.length) {
             const id = allBooks[i].dataset.entry;
-            // console.log(i);
             const elPosition = allBooks[i].getBoundingClientRect();
-            if (elPosition.top < window.innerHeight) {
 
+            if (elPosition.top < window.innerHeight) {
                 allBooks[i].classList.remove('lazy');
 
                 const bookImageLink = document.createElement('a');
                 bookImageLink.href = data[id].bookAnchor;
                 bookImageLink.target = '_blank';
-                bookImageLink.rel= 'noreferrer';
+                bookImageLink.rel = 'noreferrer';
                 bookImageLink.classList.add('preloader', 'imgLink');
                 const bookImg = document.createElement('img');
                 bookImg.classList.add('bookImg');
@@ -129,10 +104,16 @@
 
     window.onresize = () => checkWindowSize();
     window.addEventListener('load', async () => {
-        await loadCards();
         checkWindowSize();
+        const fetchData = await fetch('http://crislombardo.com.s3-website-us-east-1.amazonaws.com/techtonic/data.json');
+        data = await fetchData.json();
+
+        await loadCards(data);
         lazyAddImage();
     });
+
+
+    // Todo: Remove function after all load
     window.onscroll = () => {
         lazyAddImage();
     };
