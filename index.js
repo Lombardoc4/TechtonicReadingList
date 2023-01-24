@@ -105,7 +105,7 @@
     window.onresize = () => checkWindowSize();
     window.addEventListener('load', async () => {
         checkWindowSize();
-        const fetchData = await fetch('http://crislombardo.com.s3-website-us-east-1.amazonaws.com/techtonic/data.json');
+        const fetchData = await fetch('https://d3bo5irzey98y0.cloudfront.net/techtonic/data.json');
         data = await fetchData.json();
 
         await loadCards(data);
