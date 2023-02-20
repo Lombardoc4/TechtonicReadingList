@@ -8,7 +8,6 @@
 
 body{
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background-color: #99CCFF;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -23,17 +22,25 @@ body.sm, body.md{
     position: initial;
     width: 100%;
     margin-left: 0;
-    
+
 }
 
 header{
-    
+
     position: sticky;
     top: 1em;
-    width: 20%;
+    /* width: 20%; */
+    width: clamp(45ch, 20%, 75ch);
     padding: 1em 2em;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #99CCFF;
     margin-left: 2em;
+}
+
+.yearList{
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem 0 1rem;
 }
 
 .sm #booklist, .md #booklist{
@@ -46,16 +53,18 @@ header{
     flex-wrap: wrap;
 
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .sm .bookEntry{
 
     /* display: flex; */
-    width: 100%;
-    margin: 1em 2em;
+    /* width: 100%; */
+    width: calc(50% - 4em);
+
+    margin: 1em;
     border-bottom: 1px solid grey;
-    padding: 1em 1em 2em;
+    padding: 1em 0.5em 2em;
 }
 
 .sm .imgLink{
@@ -71,10 +80,10 @@ header{
 
 .bookEntry{
     display: flex;
-    width: calc(25% - 3em);
+    width: calc(33% - 3em);
     flex-direction: column;
-    margin: 1em;
-    padding: 0 1em;
+    /* margin: 1em; */
+    padding: 1em 1em;
 }
 
 .bookImg{

@@ -1,4 +1,5 @@
 const data = [
+    {"date":"December 12, 2022","title":"Rachel Ignotofsky, author, \"The History of the Computer\"","showAnchor":"https://www.wfmu.org/playlists/shows/122648","bookSrc":"https://www.indiebound.org/book/9781984857422","bookImageSrc":"https://wfmu.org/Gfx/playlist_images/TD/ignotovsky-cover_670875029976113_pt.jpg"},
     {
         date:         'December 12, 2022',
         title:        'Rachel Ignotofsky, author, "The History of the Computer"',
@@ -728,7 +729,7 @@ const data = [
         title:        'Why you should play games, feat. game designer &amp; author Eric Zimmerman',
         showAnchor:   'https://www.wfmu.org/playlists/shows/75248',
         bookAnchor:   'http://www.ericzimmerman.com/publications',
-        // eslint-disable-next-line max-len
         bookImageSrc: 'https://images.squarespace-cdn.com/content/v1/579b8aa26b8f5b8f49605c96/1472657289144-DI0FCV97DR5W7HJCTWF9/ke17ZwdGBToddI8pDm48kM404wW70LBJRMB97BMqW8tZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVF8xLWqvtoP__VZSPZ-OmvnzWmeHpZeVxF-sWPShfcRBYQNYiICRxjrKbuetpzyt5E/rules_of_play_front_page_photo2.jpg?format=750w',
+        // eslint-disable-next-line max-len
     },
 ];

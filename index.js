@@ -1,12 +1,29 @@
 (() => {
     let data = [];
 
+    const qs = (selector, parent = document) => parent.querySelector(selector);
+
+    const qsa = (selector, parent = document) => parent.querySelectorAll(selector);
+
+    const createEl = el => document.createElement(el);
+
+    const formatDate = (date) => {
+        const yyyy = new Date(date).getFullYear();
+        const mm = new Date(date).getMonth() + 1;
+        const dd = new Date(date).getDay();
+
+        return `${mm}-${dd}-${yyyy}`;
+    };
+
+    const parseLength = 65;
+    const parseTitle = copy => (copy.length <= parseLength ? copy : `${copy.slice(0, parseLength)}...`);
+
     const checkWindowSize = () => {
         const resizeContainers = ['#booklist', 'body'];
 
         let i = 0;
         while (i < resizeContainers.length) {
-            const container = document.querySelector(resizeContainers[i]);
+            const container = qs(resizeContainers[i]);
             container.classList.remove('sm', 'md');
             if (window.innerWidth < 992)
                 container.classList.add(window.innerWidth < 666 ? 'sm' : 'md');
@@ -17,49 +34,66 @@
 
     const loadCards = async () => {
         let i = 0;
+        let year = 0;
+
         while (i < data.length) {
             const { date, title, showAnchor, bookAnchor } = data[i];
+            const itemDate = new Date(date).getFullYear();
 
-            const showTitle = document.createElement('h1');
-            showTitle.innerHTML = title;
+            const showTitle = createEl('b');
+            showTitle.innerHTML = parseTitle(title);
 
-            const showDate = document.createElement('p');
-            showDate.innerHTML = date;
+            const showDate = createEl('p');
+            showDate.classList.add('bookDate');
+            showDate.innerHTML = formatDate(date);
 
-            const showCopy = document.createElement('div');
+            const showCopy = createEl('div');
             showCopy.classList.add('showCopy');
 
-            const showLink = document.createElement('a');
-            showLink.innerHTML = 'Playlist Link';
+            const showLink = createEl('a');
+            showLink.innerHTML = 'Playlist';
             showLink.href = showAnchor;
+            showLink.target = '_blank';
             showLink.role = 'button';
             showLink.classList.add('btn');
 
-            const bookLink = document.createElement('a');
-            bookLink.innerHTML = 'Book Link';
+            const bookLink = createEl('a');
+            bookLink.innerHTML = 'Book';
             bookLink.href = bookAnchor;
             bookLink.target = '_blank';
             bookLink.rel = 'noreferrer';
             bookLink.classList.add('btn');
 
-            const btnGroup = document.createElement('div');
+            const btnGroup = createEl('div');
             btnGroup.classList.add('btn-group');
 
-            const bookEntry = document.createElement('div');
+            const bookEntry = createEl('div');
             bookEntry.classList.add('bookEntry', 'lazy');
             bookEntry.dataset.entry = i;
+            if (itemDate !== year) {
+                bookEntry.id = itemDate;
+                year = itemDate;
+            }
 
-            const showInfo = document.createElement('div');
+            const bookContainer = createEl('div');
+
+
+            const showInfo = createEl('div');
             showInfo.classList.add('showInfo');
 
-            showCopy.append(showTitle);
             showCopy.append(showDate);
+            showCopy.append(showTitle);
             btnGroup.append(bookLink);
             btnGroup.append(showLink);
 
-            bookEntry.append(btnGroup);
+            bookContainer.append(showCopy);
+            bookContainer.append(btnGroup);
 
-            const bookList = document.getElementById('booklist');
+
+            bookEntry.append(bookContainer);
+            // bookEntry.append(btnGroup);
+
+            const bookList = qs('#booklist');
             bookList.append(bookEntry);
 
             i += 1;
@@ -68,7 +102,7 @@
 
 
     const lazyAddImage = () => {
-        const allBooks = document.querySelectorAll('.bookEntry.lazy');
+        const allBooks = qsa('.bookEntry.lazy');
 
         let i = 0;
         while (i < allBooks.length) {
@@ -78,12 +112,12 @@
             if (elPosition.top < window.innerHeight) {
                 allBooks[i].classList.remove('lazy');
 
-                const bookImageLink = document.createElement('a');
+                const bookImageLink = createEl('a');
                 bookImageLink.href = data[id].bookAnchor;
                 bookImageLink.target = '_blank';
                 bookImageLink.rel = 'noreferrer';
                 bookImageLink.classList.add('preloader', 'imgLink');
-                const bookImg = document.createElement('img');
+                const bookImg = createEl('img');
                 bookImg.classList.add('bookImg');
                 bookImg.alt = data[id].title;
                 bookImg.style.height = '0';
@@ -94,13 +128,35 @@
                 };
 
                 bookImageLink.appendChild(bookImg);
-                allBooks[i].prepend(bookImageLink);
+                qs('div', allBooks[i]).prepend(bookImageLink);
             } else {
                 return;
             }
             i += 1;
         }
     };
+
+    // Add Dates to side nav
+    // start from min year go to now then reverse array
+    const addNavYears = () => {
+        let addYear = new Date().getFullYear();
+        const minYear = new Date(data[data.length - 1].date).getFullYear();
+        while (addYear >= minYear) {
+            const headerList = qs('.yearList');
+            const yearLink = createEl('a');
+            yearLink.setAttribute('href', `#${addYear}`);
+            yearLink.innerHTML = addYear;
+
+            const yearItem = createEl('div');
+
+            yearItem.append(yearLink);
+
+            headerList.append(yearItem);
+
+            addYear -= 1;
+        }
+    };
+
 
     window.onresize = () => checkWindowSize();
     window.addEventListener('load', async () => {
@@ -110,10 +166,10 @@
 
         await loadCards(data);
         lazyAddImage();
+        addNavYears();
     });
 
 
-    // Todo: Remove function after all load
     window.onscroll = () => {
         lazyAddImage();
     };
