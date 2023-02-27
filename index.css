@@ -24,16 +24,28 @@ header{
     /* position: sticky; */
     /* top: 0; */
     width: 100%;
-    padding: 1em 2em 0;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #99CCFF;
+    justify-content: flex-end;
+    /* background-color: #99CCFF; */
+    height: 50vh;
 }
 
 header .content{
-    width: clamp(25ch, 80%, 75ch);
+    width: 100%;
     text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+header p{
+    text-align: center;
+    padding: 2rem 0 0;
+    font-weight: 300;
 }
 
 .searchBar{
@@ -63,16 +75,37 @@ header .content{
     width: 100%;
 }
 
-.yearList{
-    position: sticky;
-    top: 0;
-    background-color: #99CCFF;
-
+.filter-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    padding: 0 1rem;
+    height: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem 2rem;
+    background: linear-gradient(rgba(255,255,255,0), rgba(153, 204, 255, 1));
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
 }
+
+.filter-container.open{
+    height: calc(100vh - 72px);
+    transition: height 0.6s;
+}
+
+.filter-container .btn{
+    margin: 0 1rem 1rem  0;
+}
+
+.yearList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* flex-wrap: wrap; */
+    gap: 0 1rem;
+    padding: 1rem 0 0;
+}
+
 
 #booklist{
     width: 100%;
@@ -80,32 +113,24 @@ header .content{
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
 
-    align-items: baseline;
     justify-content: space-around;
 
 
 }
 
 .bookEntry{
-
-    /* display: flex; */
-    /* width: 100%; */
-
-    /* margin: 1em; */
-    /* border-bottom: 1px solid grey;
-
-    display: flex;
-    flex-direction: column; */
-
-    height: 100%;
-    margin-bottom: 0;
-    margin-top: 0;
-    outline: 0.5px solid #d5dbdb;
-    outline-width: 0.5px;
-    padding: 1rem;
     font-size: 0.75rem;
 
-    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+
+    /* outline: 0.5px solid #d5dbdb; */
+    /* outline-width: 0.5px; */
+    padding: 1.5rem 1rem;
+}
+
+.bookContainer{
+    margin: auto;
 }
 
 .imgLink{
@@ -140,13 +165,20 @@ header .content{
 
 .btn{
     color: #000;
-    padding: 0.5em;
+    background-color: #fff;
+    padding: 0.5rem;
     border: 1px solid #000;
     border-radius: 5px;
-    background-color: white;
+    /* background-color: white; */
     box-shadow: 0 0 6px -3px grey;
-    margin: 0.5em;
+    margin: 0.5rem;
     text-align: center;
+}
+
+.btn-lg{
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    margin: auto;
 }
 
 a.btn{
@@ -156,27 +188,76 @@ a.btn{
 .d-none{
     display: none;
 }
+.d-flex{display: flex;}
 
-@media screen and (min-width: 390px) {
-
+@media screen and (min-width: 390px) and (max-width: 820px) {
+    #booklist{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (min-width: 821px) {
-    body{
+    .d-lg-initial{
+        display: initial
+    }
+    .d-lg-none{display:none}
+    
+    .filter-container.open{
+        padding-top: 1rem;
+        left: 25%;
+        right: 25%;
+        height: auto;
+        background: #fff;
+        border: 2px solid #99CCFF;
+        border-bottom: 0;
+    }
+    /* body{
         flex-direction: row;
+        margin: 2rem;
+        gap: 2rem;
     }
     header{
-        top: 1em;
-        margin-left: 2em;
+        max-width: 300px;
+        position: sticky;
+        top: 2em;
+        box-shadow: 0 0 30px -20px;
+    } */
+    h1 {font-size: 5rem;}
+    
+    
+    header{
+        height: 50vh;
+        justify-content: center;
     }
-    #bookList{
-        width: 80%;
+    header .content{
+        width: clamp(45ch, 60%, 75ch);
     }
-
+    header p{
+        padding: 2rem;
+        font-size: 1.25rem;
+    }
+    
+    .searchBar{
+        max-width: 55ch;
+    }
+    
+    main{
+        /* max-width: 780px; */
+        margin: auto;
+    }
+    
+    #booklist{
+        /* width: 80%; */
+        /* flex: 1; */
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
     .bookEntry{
-        width: calc(33% - 3em);
-        flex-direction: column;
-        /* margin: 1em; */
-        padding: 1em 1em;
+        padding: 1.5rem 2.5rem;
+    }
+    
+    .bookImg{
+        max-width: 250px;
+        max-height: 250px;
     }
 }

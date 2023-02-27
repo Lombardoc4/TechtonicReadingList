@@ -76,7 +76,9 @@
             }
 
             const bookContainer = createEl('div');
-
+            bookContainer.classList.add('bookContainer')
+            bookContainer.setAttribute('title', title);
+            
 
             const showInfo = createEl('div');
             showInfo.classList.add('showInfo');
@@ -87,10 +89,10 @@
             btnGroup.append(showLink);
 
             bookContainer.append(showCopy);
-            bookContainer.append(btnGroup);
-
-
+            
+            
             bookEntry.append(bookContainer);
+            bookEntry.append(btnGroup);
             // bookEntry.append(btnGroup);
 
             const bookList = qs('#booklist');
@@ -146,17 +148,27 @@
             const yearLink = createEl('a');
             yearLink.setAttribute('href', `#${addYear}`);
             yearLink.innerHTML = addYear;
+            
+            // const yearItem = createEl('div');
+            
+            // yearItem.append(yearLink);
+            yearLink.classList.add('btn')
+            
+            yearLink.addEventListener('click', function() {
+                filterContainer.classList.contains('open') && filterContainer.classList.remove('open');
+            })
 
-            const yearItem = createEl('div');
-
-            yearItem.append(yearLink);
-
-            headerList.append(yearItem);
+            headerList.append(yearLink);
 
             addYear -= 1;
         }
     };
 
+    
+    const filterContainer = qs('.filter-container ');
+    qs('.bi-filter').addEventListener('click', () => {
+        filterContainer.classList.toggle('open');
+    })
 
     window.onresize = () => checkWindowSize();
     window.addEventListener('load', async () => {

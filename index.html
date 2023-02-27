@@ -17,24 +17,20 @@
         <div class="content">
 
             <h1>Techtonic Reading&nbsp;List</h1>
-            <br>
-            <p>
-                <a href="https://wfmu.org/playlists/TD" target="_blank" rel="noreferrer">Techtonic</a>
-                is a show/podcast on local NJ radio station,
-                <a href="https://wfmu.org/" target="_blank" rel="noreferrer">WFMU</a>,
-                hosted by Mark&nbsp;Hurst, describing his show as:
+            <p><i>&emsp;"Conversations with creators and thinkers who are charting the way forward in a tech-saturated society.
+                Tech, community, video games, and&nbsp;whatever else is next."</i>
             </p>
-            <br/>
-            <p>
-            <b><i>&emsp;"Conversations with creators and thinkers who are charting the way forward in a tech-saturated society.
-                Tech, community, video games, and&nbsp;whatever else is next."</i></b>
-            </p>
+            
         </div>
 
 
 
     </header>
-    <div style="height: 72px; position: fixed; bottom: 0; background-color: #99CCFF; display: flex; gap: 1rem; padding: 1rem; width: 100%; align-items: center;">
+    <div style="height: 72px; position: fixed; bottom: 0; left: 0; background-color: #99CCFF; display: flex; gap: 1rem; padding: 1rem; width: 100%; align-items: center; justify-content: center;">
+        <p class="d-none d-lg-initial">
+            <a class="btn" href="https://wfmu.org/playlists/TD" target="_blank" rel="noreferrer">Techtonic</a>
+            <a class="btn" href="https://wfmu.org/" target="_blank" rel="noreferrer">WFMU</a>
+        </p>
 
         <div class="searchBar">
             <div style="display: inline-block;
@@ -44,19 +40,30 @@
             position: relative;
             width: 24px;">
 
-<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
-</div>
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+            </div>
             <input type="text" name="search" id="searchBar" placeholder="Search...">
         </div>
         <div class="filters">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
                 <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-            <div class="yearList" style="display: none;"></div>
+            </svg>
+        </div>
+        <div class="filter-container">
+            <div class="d-lg-none d-flex">
+                <a class="btn btn-lg" href="https://wfmu.org/playlists/TD" target="_blank" rel="noreferrer">Techtonic</a>
+                <a class="btn btn-lg" href="https://wfmu.org/" target="_blank" rel="noreferrer">WFMU</a>
+            </div>
+            <h3>Jump to:</h3>
+            <div class="yearList"></div>
         </div>
     </div>
-    <section id="booklist">
-    </section>
+    
+    
+    <main>
+        <section id="booklist">
+        </section>
+    </main>
 
     <!-- <script src="./titleList.js"></script> -->
     <script src="./index.js"></script>
