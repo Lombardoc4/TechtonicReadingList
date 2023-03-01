@@ -65,7 +65,7 @@ header p{
     margin: 0;
     padding: 0 0 0 8px;
     font-size: 18px;
-    font-family: Roboto,Helvetica Neue,Arial,sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: #202124;
     word-wrap: break-word;
     outline: none;
@@ -101,6 +101,7 @@ header p{
 .yearList{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     /* flex-wrap: wrap; */
     gap: 0 1rem;
     padding: 1rem 0 0;
@@ -202,7 +203,32 @@ a.btn{
     }
     .d-lg-none{display:none}
     
-    .filter-container.open{
+    .search-results{
+        display: none;
+    }
+    
+    .filter-container.open .search-results{
+        display: initial;
+        max-width: 600px;
+        margin: auto auto 0;
+        overflow: scroll;
+    }
+    
+    .s-result:not(.d-none){
+        /* color: #ffffff; */
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    .result-date{
+        font-style: italic;
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+    
+    .filters.open{
         padding-top: 1rem;
         left: 25%;
         right: 25%;
@@ -226,14 +252,15 @@ a.btn{
     
     
     header{
-        height: 50vh;
+        height: 80vh;
         justify-content: center;
     }
     header .content{
         width: clamp(45ch, 60%, 75ch);
+        text-shadow: #bbbbbb 0 0 1rem;
     }
     header p{
-        padding: 2rem;
+        padding: 4rem 2rem 2rem;
         font-size: 1.25rem;
     }
     

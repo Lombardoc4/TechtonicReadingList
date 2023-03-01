@@ -12,6 +12,8 @@
         const mm = new Date(date).getMonth() + 1;
         const dd = new Date(date).getDay();
 
+        if ([mm, dd, yyyy].includes('NaN')) return '';
+        
         return `${mm}-${dd}-${yyyy}`;
     };
 
@@ -167,8 +169,43 @@
     
     const filterContainer = qs('.filter-container ');
     qs('.bi-filter').addEventListener('click', () => {
-        filterContainer.classList.toggle('open');
+        qs('.filters').classList.toggle('open');
     })
+    
+    qs('#searchBar').addEventListener('input', (e) => {
+        const input = e.target.value;
+        const filterContainer = qs('.filter-container');
+        
+        if (input.length <= 0) {
+            // todo Hide list if visible
+            filterContainer.classList.remove('open')
+            return;
+        }
+        
+        filterContainer.classList.add('open')
+        
+        // Loop through data
+        const searchResults = [...data.filter(item => 
+            new RegExp(input.toLowerCase(), 'gi').exec(item.title.toString().toLowerCase())?.length || false)
+        ].reverse();
+        
+        console.log('searchRes', searchResults);
+        
+        const searchResContainer = qs('.search-results');
+        searchResContainer.innerHTML = '';
+        searchResults.map(res => {
+            const date =  formatDate(res.date);
+            const template = qs('.s-result').cloneNode(true);
+            template.classList.remove('d-none');
+            template.dataset.date = date;
+            qs('.result-date', template).innerHTML = date;
+            qs('img', template).src = res.bookImageSrc;
+            qs('.result-title', template).innerHTML = res.title;
+            searchResContainer.append(template);
+        })
+        // console.log(searchResults);
+        
+    });
 
     window.onresize = () => checkWindowSize();
     window.addEventListener('load', async () => {

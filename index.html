@@ -12,7 +12,15 @@
 </head>
 <body>
     <img style="display: none" src="img/preloader.gif">
-
+    <div class="s-result d-none">
+        <img src="#" width="80px"/>
+        <div>
+            <div class="result-date"></div>
+            <div class="result-title"></div>
+        </div>
+    </div>
+    
+    
     <header>
         <div class="content">
 
@@ -27,10 +35,10 @@
 
     </header>
     <div style="height: 72px; position: fixed; bottom: 0; left: 0; background-color: #99CCFF; display: flex; gap: 1rem; padding: 1rem; width: 100%; align-items: center; justify-content: center;">
-        <p class="d-none d-lg-initial">
+        <!-- <p class="d-none d-lg-initial">
             <a class="btn" href="https://wfmu.org/playlists/TD" target="_blank" rel="noreferrer">Techtonic</a>
             <a class="btn" href="https://wfmu.org/" target="_blank" rel="noreferrer">WFMU</a>
-        </p>
+        </p> -->
 
         <div class="searchBar">
             <div style="display: inline-block;
@@ -54,8 +62,14 @@
                 <a class="btn btn-lg" href="https://wfmu.org/playlists/TD" target="_blank" rel="noreferrer">Techtonic</a>
                 <a class="btn btn-lg" href="https://wfmu.org/" target="_blank" rel="noreferrer">WFMU</a>
             </div>
-            <h3>Jump to:</h3>
-            <div class="yearList"></div>
+            <div class="search-results">
+                
+            </div>
+            <div class="d-none filters">
+                
+                <h3>Jump to:</h3>
+                <div class="yearList"></div>
+            </div>
         </div>
     </div>
     
