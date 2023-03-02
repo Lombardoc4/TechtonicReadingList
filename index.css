@@ -66,6 +66,15 @@ header p{
     overflow: hidden;
 }
 
+.searchBar-icon{
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+
 #searchBar{
     line-height: 25px;
     background-color: #ffffff;
@@ -286,6 +295,7 @@ a.btn{
     .searchBar{
         max-width: 55ch;
     }
+    
     
     main{
         /* max-width: 780px; */
