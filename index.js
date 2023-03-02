@@ -40,7 +40,6 @@
 
         while (i < data.length) {
             const { date, title, showAnchor, bookAnchor } = data[i];
-            const itemDate = new Date(date).getFullYear();
 
             const showTitle = createEl('b');
             showTitle.innerHTML = parseTitle(title);
@@ -72,10 +71,6 @@
             const bookEntry = createEl('div');
             bookEntry.classList.add('bookEntry', 'lazy');
             bookEntry.dataset.entry = i;
-            if (itemDate !== year) {
-                bookEntry.id = itemDate;
-                year = itemDate;
-            }
 
             const bookContainer = createEl('div');
             bookContainer.classList.add('bookContainer')
@@ -142,29 +137,6 @@
 
     // Add Dates to side nav
     // start from min year go to now then reverse array
-    const addNavYears = () => {
-        let addYear = new Date().getFullYear();
-        const minYear = new Date(data[data.length - 1].date).getFullYear();
-        while (addYear >= minYear) {
-            const headerList = qs('.yearList');
-            const yearLink = createEl('a');
-            yearLink.setAttribute('href', `#${addYear}`);
-            yearLink.innerHTML = addYear;
-            
-            // const yearItem = createEl('div');
-            
-            // yearItem.append(yearLink);
-            yearLink.classList.add('btn')
-            
-            yearLink.addEventListener('click', function() {
-                filterContainer.classList.contains('open') && filterContainer.classList.remove('open');
-            })
-
-            headerList.append(yearLink);
-
-            addYear -= 1;
-        }
-    };
 
     
     const filterContainer = qs('.filter-container ');
@@ -258,7 +230,6 @@
 
         await loadCards(data);
         lazyAddImage();
-        addNavYears();
     });
 
 
