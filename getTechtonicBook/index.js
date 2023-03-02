@@ -106,11 +106,11 @@ exports.handler = async (event) => {
     if (file && showData) {
         const parsedFile = JSON.parse(file.Body.toString());
 
-        console.log('showData', showData);
+        // console.log('showData', showData);
 
         parsedFile.unshift(showData);
 
-        console.log('final parseFile', parsedFile);
+        // console.log('final parseFile', parsedFile);
 
         // Write the updated file back to S3
         await s3.putObject({

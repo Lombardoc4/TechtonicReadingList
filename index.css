@@ -100,15 +100,45 @@ header p{
 .filter-container.open{
     height: calc(100vh - 72px);
     transition: height 0.6s;
+    box-shadow: inset 0 0 10px -5px;
+}
+.search-results{
+    display: none;
 }
 
-.filter-container .btn{
-    margin: 0 1rem 1rem  0;
+.search-results h2{
+    text-align: center;
+    margin: 2rem;
+}
+
+.filter-container.open .search-results{
+    display: initial;
+    width: 100%;
+    /* max-height: 50%; */
+    max-width: 600px;
+    margin: auto auto 0;
+    overflow: scroll;
+}
+
+.s-result{
+    /* color: #ffffff; */
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    
+}
+
+.result-date{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.75rem;
 }
 
 .yearList{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     justify-content: center;
     /* flex-wrap: wrap; */
     gap: 0 1rem;
@@ -139,7 +169,7 @@ header p{
 }
 
 .bookContainer{
-    margin: auto;
+    margin-top: auto;
 }
 
 .imgLink{
@@ -148,6 +178,7 @@ header p{
 }
 
 .bookImg{
+    width: 100%;
     max-width: 130px;
     max-height: 130px;
     margin: auto;
@@ -211,40 +242,11 @@ a.btn{
     }
     .d-lg-none{display:none}
     
-    .search-results{
-        display: none;
-    }
-    
-    .filter-container.open{
-        box-shadow: inset 0 0 10px -5px;
-        
-    }
     
     .filter-container.open .search-results{
-        display: initial;
-        width: 100%;
-        max-height: 50%;;
-        max-width: 600px;
-        margin: auto auto 0;
-        overflow: scroll;
+        max-height: 50%;
     }
-    
-    .s-result{
-        /* color: #ffffff; */
-        cursor: pointer;
-        display: flex;
-        gap: 1rem;
-        padding: 1rem;
-        align-items: center;
-        
-    }
-    
-    .result-date{
-        font-style: italic;
-        font-weight: 700;
-        font-size: 0.75rem;
-    }
-    
+    /*
     .filters.open{
         padding-top: 1rem;
         left: 25%;
@@ -253,7 +255,7 @@ a.btn{
         background: #fff;
         border: 2px solid #99CCFF;
         border-bottom: 0;
-    }
+    } */
     /* body{
         flex-direction: row;
         margin: 2rem;
@@ -301,7 +303,7 @@ a.btn{
     }
     
     .bookImg{
-        max-width: 250px;
+        /* max-width: 250px; */
         max-height: 250px;
     }
 }

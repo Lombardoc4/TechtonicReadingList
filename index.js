@@ -17,7 +17,7 @@
         return `${mm}-${dd}-${yyyy}`;
     };
 
-    const parseLength = 65;
+    const parseLength = 50;
     const parseTitle = copy => (copy.length <= parseLength ? copy : `${copy.slice(0, parseLength)}...`);
 
     const checkWindowSize = () => {
@@ -170,13 +170,9 @@
     const filterContainer = qs('.filter-container ');
     
     filterContainer.addEventListener('click', function(e)  {
-        console.log(e.target, this);
         if (e.target === this){
             this.classList.remove('open');
         }
-    })
-    qs('.bi-filter').addEventListener('click', () => {
-        qs('.filters').classList.toggle('open');
     })
     
     const unFreezeScroll = () => {
@@ -219,25 +215,35 @@
         
         const searchResContainer = qs('.search-results');
         searchResContainer.innerHTML = '';
-        searchResults.map(res => {
-            const date =  formatDate(res.date);
-            const template = qs('.s-result').cloneNode(true);
-            template.classList.remove('d-none');
-            template.dataset.date = date;
-            qs('.result-date', template).innerHTML = date;
-            qs('img', template).src = res.bookImageSrc;
-            qs('.result-title', template).innerHTML = res.title;
+        
+        if (searchResults.length <= 0) {
+            const msg = createEl('h2');
+            msg.innerHTML = 'No Results';
+            searchResContainer.append(msg);
             
-            template.addEventListener('click', () => {
-                unFreezeScroll();
-                filterContainer.classList.remove('open');
+        } else {
+            // Add Options
+            searchResults.map(res => {
+                const date =  formatDate(res.date);
+                const template = qs('.s-result').cloneNode(true);
+                template.classList.remove('d-none');
+                template.dataset.date = date;
+                qs('.result-date', template).innerHTML = date;
+                qs('img', template).src = res.bookImageSrc;
+                qs('.result-title', template).innerHTML = res.title;
                 
-                
-                qs(`[title='${res.title}']`).scrollIntoView();
-                
-            })
-            searchResContainer.append(template);
-        });
+                template.addEventListener('click', () => {
+                    unFreezeScroll();
+                    filterContainer.classList.remove('open');
+                    
+                    
+                    qs(`[title='${res.title}']`).scrollIntoView();
+                    
+                })
+                searchResContainer.append(template);
+            });
+        }
+        
         
         searchResContainer.scrollTop = searchResContainer.scrollHeight;
         
