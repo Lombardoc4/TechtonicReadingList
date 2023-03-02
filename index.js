@@ -1,10 +1,10 @@
 (() => {
     let data = [];
-
+    
     const qs = (selector, parent = document) => parent.querySelector(selector);
-
+    
     const qsa = (selector, parent = document) => parent.querySelectorAll(selector);
-
+    
     const createEl = el => document.createElement(el);
 
     const formatDate = (date) => {
@@ -168,28 +168,54 @@
 
     
     const filterContainer = qs('.filter-container ');
+    
+    filterContainer.addEventListener('click', function(e)  {
+        console.log(e.target, this);
+        if (e.target === this){
+            this.classList.remove('open');
+        }
+    })
     qs('.bi-filter').addEventListener('click', () => {
         qs('.filters').classList.toggle('open');
     })
     
+    const unFreezeScroll = () => {
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }
+    
     qs('#searchBar').addEventListener('input', (e) => {
         const input = e.target.value;
-        const filterContainer = qs('.filter-container');
+        // const filterContainer = qs('.filter-container');
         
         if (input.length <= 0) {
             // todo Hide list if visible
             filterContainer.classList.remove('open')
+            
+            unFreezeScroll();
+            
+            
             return;
         }
         
-        filterContainer.classList.add('open')
-        
+        if (!filterContainer.classList.contains('open')) {
+            const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${scrollY}`;
+            document.body.style.left = 0;
+            document.body.style.right = 0;
+            
+            filterContainer.classList.add('open');
+        }
         // Loop through data
         const searchResults = [...data.filter(item => 
             new RegExp(input.toLowerCase(), 'gi').exec(item.title.toString().toLowerCase())?.length || false)
         ].reverse();
         
-        console.log('searchRes', searchResults);
         
         const searchResContainer = qs('.search-results');
         searchResContainer.innerHTML = '';
@@ -201,9 +227,20 @@
             qs('.result-date', template).innerHTML = date;
             qs('img', template).src = res.bookImageSrc;
             qs('.result-title', template).innerHTML = res.title;
+            
+            template.addEventListener('click', () => {
+                unFreezeScroll();
+                filterContainer.classList.remove('open');
+                
+                
+                qs(`[title='${res.title}']`).scrollIntoView();
+                
+            })
             searchResContainer.append(template);
-        })
-        // console.log(searchResults);
+        });
+        
+        searchResContainer.scrollTop = searchResContainer.scrollHeight;
+        
         
     });
 
@@ -221,5 +258,6 @@
 
     window.onscroll = () => {
         lazyAddImage();
+        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     };
 })();
