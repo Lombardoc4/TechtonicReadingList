@@ -5,32 +5,34 @@
 # or to provide custom queries or build logic.
 #
 
-name: 'Get New Author'
+name: 'Techtonic CRON job'
 
-on: workflow_dispatch
-# on:
-#   schedule:
-#     - cron: '0 23 * * 1'
+# on: workflow_dispatch
+on:
+  schedule:
+    - cron: '0 23 * * 1'
 
 jobs:
   dataSetup:
-    name: Data Setup
+    name: Get new author
 
     runs-on: ubuntu-latest
     env:
         CRON_COMMIT_MESSAGE: CRON - Update data.js
         CRON_COMMIT_AUTHOR: CRON
 
-    # TODO : Make artifact and upload to repo
     steps:
       - uses: actions/checkout@v4
-      - name: Node setup
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 'latest'
+
+        name: Install dependecies
       - run: cd getTechtonicBook && npm i
+        name: Fetch new data
       - run: cd getTechtonicBook && npm run fetch --if-present
-      - name: GIT Commit Build Artifacts
+
+      - name: GIT Commit Changes
         run: |
             git config --global user.name "${{ env.CRON_COMMIT_AUTHOR }}"
             git config --global user.email "username@users.noreply.github.com"

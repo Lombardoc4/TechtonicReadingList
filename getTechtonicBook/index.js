@@ -4,7 +4,7 @@ const axios = require("axios");
 const fs = require("fs");
 
 const config = {
-    techtonicUrl: "https://www.wfmu.org/playlists/TD123",
+    techtonicUrl: "https://www.wfmu.org/playlists/TD",
     jsFile: "data.js",
 };
 
