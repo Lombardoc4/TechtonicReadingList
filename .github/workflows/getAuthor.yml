@@ -24,7 +24,9 @@ jobs:
     # TODO : Make artifact and upload to repo
     steps:
       - uses: actions/checkout@v4
-      - run: cd getTechtonicBook/
+        with:
+            sparse-checkout:  |
+                getTechtonicBook
       - name: Node setup
         uses: actions/setup-node@v3
         with:
