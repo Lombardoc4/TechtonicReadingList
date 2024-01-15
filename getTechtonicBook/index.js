@@ -6,6 +6,7 @@ const fs = require("fs");
 const config = {
     techtonicUrl: "https://www.wfmu.org/playlists/TD",
     jsFile: "data.js",
+    backupFile: "data-backup.js",
 };
 
 let dataFile = fs.readFileSync(config.jsFile, "utf8");
@@ -145,10 +146,15 @@ const getShowData = async () => {
     return newShows;
 };
 
+const createBackUp = () => {
+    fs.writeFileSync(config.backupFile, fs.readFileSync(config.jsFile, "utf8"), 'utf8')
+}
+
 getShowData()
     .then((shows) => {
         if (shows.length === 0) console.log("No new shows");
         else {
+            createBackUp()
 
             // Replace file with updated data
             try {

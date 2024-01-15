@@ -4,7 +4,7 @@ const data = [
                     "title": "Guillaume Pitron, author, \"The Dark Cloud\"",
                     "showAnchor": "https://www.wfmu.org/playlists/shows/134801",
                     "bookSrc": "https://bookshop.org/p/books/digital-hell-the-inner-workings-of-a-like-guillaume-pitron/18436135?ean=9781957363011",
-                    "bookImageSrc": "https://wfmu.org/Gfx/playlist_images/TD/mattie-lubchansky-on-AI_7023261252197680_pt.png"
+                    "bookImageSrc": "https://images-us.bookshop.org/ingram/9781957363011.jpg?height=500&v=v2-781dac4452886d3875d6e888b1331f8e"
                 },
                 {
                     "date": "November 13, 2023",
@@ -32,7 +32,7 @@ const data = [
                     "title": "Coco Krumme, author, \"Optimal Illusions\"",
                     "showAnchor": "https://www.wfmu.org/playlists/shows/131517",
                     "bookSrc": "https://bookshop.org/p/books/optimal-illusions-the-false-promise-of-optimization-coco-krumme/19713426?ean=9780593331118",
-                    "bookImageSrc": "https://www.wfmu.org/Gfx/user_images/sardine_3602008356199702.jpg"
+                    "bookImageSrc": "https://wfmu.org/Gfx/playlist_images/TD/optimal-illusions-cover_6938645374288295.jpg"
                 },
                 {
                     "date": "August 28, 2023",
@@ -81,7 +81,7 @@ const data = [
                     "title": "Cory Doctorow, author, \"Chokepoint Capitalism\"",
                     "showAnchor": "https://www.wfmu.org/playlists/shows/125826",
                     "bookSrc": "https://www.indiebound.org/book/9780807007068",
-                    "bookImageSrc": "https://wfmu.org/Gfx/playlist_images/TD/cory-and-rebecca-darkdel-2_6793295188771441_pt.jpg"
+                    "bookImageSrc": "https://images-us.bookshop.org/ingram/9780807007068.jpg?height=500&v=v2-b7698ccedcc1d973bdada3533969f7e9"
                 },
                 {
                     "date": "February 20, 2023",
