@@ -7,9 +7,10 @@
 
 name: 'Get New Author'
 
-on:
-  schedule:
-    - cron: '0 23 * * 1'
+on: workflow_dispatch
+# on:
+#   schedule:
+#     - cron: '0 23 * * 1'
 
 jobs:
   dataSetup:
