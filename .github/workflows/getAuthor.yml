@@ -24,14 +24,11 @@ jobs:
     # TODO : Make artifact and upload to repo
     steps:
       - uses: actions/checkout@v4
-        with:
-            sparse-checkout:  |
-                getTechtonicBook
       - name: Node setup
         uses: actions/setup-node@v3
         with:
           node-version: 'latest'
-      - run: npm i
+      - run: cd getTechtonicBook && npm i
       - run: npm run fetch --if-present
       - name: GIT Commit Build Artifacts
         run: |
