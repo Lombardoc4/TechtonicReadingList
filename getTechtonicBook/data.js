@@ -4,7 +4,7 @@ const data = [
                     "title": "Guillaume Pitron, author, \"The Dark Cloud\"",
                     "showAnchor": "https://www.wfmu.org/playlists/shows/134801",
                     "bookSrc": "https://bookshop.org/p/books/digital-hell-the-inner-workings-of-a-like-guillaume-pitron/18436135?ean=9781957363011",
-                    "bookImageSrc": "https://images-us.bookshop.org/ingram/9781957363011.jpg?height=500&v=v2-781dac4452886d3875d6e888b1331f8e"
+                    "bookImageSrc": "https://images-us.bookshop.org/ingram/9781957363011.jpg"
                 },
                 {
                     "date": "November 13, 2023",
@@ -81,7 +81,7 @@ const data = [
                     "title": "Cory Doctorow, author, \"Chokepoint Capitalism\"",
                     "showAnchor": "https://www.wfmu.org/playlists/shows/125826",
                     "bookSrc": "https://www.indiebound.org/book/9780807007068",
-                    "bookImageSrc": "https://images-us.bookshop.org/ingram/9780807007068.jpg?height=500&v=v2-b7698ccedcc1d973bdada3533969f7e9"
+                    "bookImageSrc": "https://images-us.bookshop.org/ingram/9780807007068.jpg"
                 },
                 {
                     "date": "February 20, 2023",
@@ -158,7 +158,7 @@ const data = [
         "title": "James Bridle, author, \"Ways of Being\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/118497",
         "bookSrc": "https://us.macmillan.com/books/9780374601119/waysofbeing",
-        "bookImageSrc": "https://mpd-biblio-covers.imgix.net/9780374601119.jpg?w=900"
+        "bookImageSrc": "https://mpd-biblio-covers.imgix.net/9780374601119.jpg"
     },
     {
         "date": "July 25, 2022",
@@ -193,7 +193,7 @@ const data = [
         "title": "Jeff Deutsch, author, \"In Praise of Good Bookstores\"",
         "showAnchor": "https://wfmu.org/playlists/shows/116196",
         "bookSrc": "https://press.princeton.edu/books/hardcover/9780691207766/in-praise-of-good-bookstores",
-        "bookImageSrc": "https://pup-assets.imgix.net/onix/images/9780691207766.jpg?w=1500&auto=format"
+        "bookImageSrc": "https://pup-assets.imgix.net/onix/images/9780691207766.jpg"
     },
     {
         "date": "May 9, 2022",
@@ -207,7 +207,7 @@ const data = [
         "title": "Sasha Stiles, poet and artist, on her book \"Technelegy\"",
         "showAnchor": "https://wfmu.org/playlists/shows/114436",
         "bookSrc": "https://blackspringpressgroup.com/products/technelegy",
-        "bookImageSrc": "https://cdn.shopify.com/s/files/1/0985/7354/products/Cover_Stiles_pre_1200x.jpg?v=1627557139"
+        "bookImageSrc": "https://cdn.shopify.com/s/files/1/0985/7354/products/Cover_Stiles_pre_1200x.jpg"
     },
     {
         "date": "April 4, 2022",
@@ -284,7 +284,7 @@ const data = [
         "title": "Shannon Mattern, author, \"A City Is Not A Computer\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/107151",
         "bookSrc": "https://press.princeton.edu/books/paperback/9780691208053/a-city-is-not-a-computer",
-        "bookImageSrc": "https://pup-assets.imgix.net/onix/images/9780691208053.jpg?w=410&auto=format"
+        "bookImageSrc": "https://pup-assets.imgix.net/onix/images/9780691208053.jpg"
     },
     {
         "date": "August 16, 2021",
@@ -305,7 +305,7 @@ const data = [
         "title": "Annette LeMay Burke, photographer and author, \"Fauxliage\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/105743",
         "bookSrc": "http://atelierlemay.com/book/index.html",
-        "bookImageSrc": "https://d11pj51h4ledry.cloudfront.net/wp-content/uploads/2021/03/29135720/Annette_LeMay_Burke_Fauxliage_Book.jpg"
+        "bookImageSrc": "https://wfmu.org/Gfx/playlist_images/TD/fauxliage-airport-approach-palm-springs-ca_6261011756527161_pt.jpg"
     },
     {
         "date": "June 28, 2021",
@@ -333,7 +333,7 @@ const data = [
         "title": "Frank Pasquale, author, \"New Laws of Robotics\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/103517",
         "bookSrc": "https://www.hup.harvard.edu/catalog.php?isbn=9780674975224",
-        "bookImageSrc": "https://www.hup.harvard.edu/images/jackets/9780674975224-lg.jpg"
+        "bookImageSrc": "https://wfmu.org/Gfx/playlist_images/TD/new-laws-cover_6200717715346636_pt.jpg"
     },
     {
         "date": "April 26, 2021",
@@ -452,7 +452,7 @@ const data = [
         "title": "Katie Mack, author, \"The End of Everything\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/95943",
         "bookSrc": "http://www.astrokatie.com/book",
-        "bookImageSrc": "https://images.squarespace-cdn.com/content/v1/52060eb0e4b021ed6a208a73/1611953703422-B5HI45V8AHCOHT3XTPI8/ke17ZwdGBToddI8pDm48kBDCGSZMTsEKV9FW6FXfR4RZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7Xj1nVWs2aaTtWBneO2WM-teihA1JYWR-3Or7_-5P6lhA54g9fAgNExaK_3pjsk8OQ/book+with+NYT+sticker.jpg?format=750w"
+        "bookImageSrc": "https://images.squarespace-cdn.com/content/v1/52060eb0e4b021ed6a208a73/1611953703422-B5HI45V8AHCOHT3XTPI8/ke17ZwdGBToddI8pDm48kBDCGSZMTsEKV9FW6FXfR4RZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7Xj1nVWs2aaTtWBneO2WM-teihA1JYWR-3Or7_-5P6lhA54g9fAgNExaK_3pjsk8OQ/book+with+NYT+sticker.jpg"
     },
     {
         "date": "August 17, 2020",
@@ -466,7 +466,7 @@ const data = [
         "title": "Joel Kotkin, author, \"The Coming of Neo-Feudalism\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/95455",
         "bookSrc": "https://bookshop.org/books/the-coming-of-neo-feudalism-a-warning-to-the-global-middle-class/9781641770941",
-        "bookImageSrc": "https://images-production.bookshop.org/spree/images/attachments/11038373/original/9781641770941.jpg?1588837170"
+        "bookImageSrc": "https://images-production.bookshop.org/spree/images/attachments/11038373/original/9781641770941.jpg"
     },
     {
         "date": "July 27, 2020",
@@ -501,21 +501,21 @@ const data = [
         "title": "Jathan Sadowski, author, \"Too Smart: How Digital Capitalism is Extracting Data, Controlling Our Lives, and Taking Over the World\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/93184",
         "bookSrc": "https://mitpress.mit.edu/books/too-smart",
-        "bookImageSrc": "https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262538589%26type%3D.jpg?itok=RxCyQeeg"
+        "bookImageSrc": "https://mit-press-us.imgix.net/covers/9780262538589.jpg"
     },
     {
         "date": "April 20, 2020",
         "title": "Toby Ord, author, \"The Precipice: Existential Risk and the Future of Humanity\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/92739",
         "bookSrc": "https://bookshop.org/books/the-precipice-existential-risk-and-the-future-of-humanity/9780316484916",
-        "bookImageSrc": "https://images-production.bookshop.org/spree/images/attachments/94650/original/9780316484916.jpg?1589085597"
+        "bookImageSrc": "https://images-production.bookshop.org/spree/images/attachments/94650/original/9780316484916.jpg"
     },
     {
         "date": "April 13, 2020",
         "title": "David Sax, author, \"The Soul of an Entrepreneur\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/92622",
         "bookSrc": "https://bookshop.org/books/the-soul-of-an-entrepreneur-work-and-life-beyond-the-startup-myth/9781541736009",
-        "bookImageSrc": "https://images-production.bookshop.org/spree/images/attachments/10185308/original/SoulofanEntrepreneur.jpg?1591796338"
+        "bookImageSrc": "https://images-production.bookshop.org/spree/images/attachments/10185308/original/SoulofanEntrepreneur.jpg"
     },
     {
         "date": "March 30, 2020",
@@ -536,7 +536,7 @@ const data = [
         "title": "David Courtwright, author, \"The Age of Addiction\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/91199",
         "bookSrc": "https://www.hup.harvard.edu/catalog.php?isbn=9780674737372",
-        "bookImageSrc": "https://www.hup.harvard.edu/images/jackets/9780674737372.jpg"
+        "bookImageSrc": "https://www.hup.harvard.edu/img/feeds/jackets/9780674737372.png"
     },
     {
         "date": "January 27, 2020",
@@ -683,7 +683,7 @@ const data = [
         "title": "Prof. Susan Crawford, author, \"Fiber\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/84002",
         "bookSrc": "https://yalebooks.yale.edu/book/9780300228502/fiber",
-        "bookImageSrc": "https://yalebooks.yale.edu/sites/default/files/styles/book_jacket/public/imagecache/external/2d2211191de6e81f5f723e43c12d92c0.jpg?itok=s7mj0cAM"
+        "bookImageSrc": "https://yalebooks.yale.edu/sites/default/files/styles/book_jacket/public/imagecache/external/2d2211191de6e81f5f723e43c12d92c0.jpg"
     },
     {
         "date": "January 28, 2019",
@@ -718,14 +718,14 @@ const data = [
         "title": "Frank Pasquale, author of \"The Black Box Society,\" on secret algorithms",
         "showAnchor": "https://www.wfmu.org/playlists/shows/82516",
         "bookSrc": "https://www.hup.harvard.edu/catalog.php?isbn=9780674970847",
-        "bookImageSrc": "https://www.hup.harvard.edu/images/jackets/9780674970847.jpg"
+        "bookImageSrc": "https://www.hup.harvard.edu/img/feeds/jackets/9780674970847.png"
     },
     {
         "date": "October 22, 2018",
         "title": "Yasha Levine, author, \"Surveillance Valley\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/81998",
         "bookSrc": "https://surveillancevalley.com/",
-        "bookImageSrc": "https://surveillancevalley.com/content/1-home/9781785784781-345x555.jpg"
+        "bookImageSrc": "https://www.hachettebookgroup.com/wp-content/uploads/2017/06/surveillencevalley_noquote.jpg"
     },
     {
         "date": "August 13, 2018",
@@ -767,14 +767,14 @@ const data = [
         "title": "Meredith Broussard, author, \"Artificial Unintelligence\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/79354",
         "bookSrc": "https://mitpress.mit.edu/books/artificial-unintelligence",
-        "bookImageSrc": "https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262537018%26type%3D.jpg?itok=WcxeDtIw"
+        "bookImageSrc": "https://mit-press-us.imgix.net/covers/9780262537018.jpg"
     },
     {
         "date": "May 14, 2018",
         "title": "David Sax, author, \"The Revenge of Analog\"",
         "showAnchor": "https://www.wfmu.org/playlists/shows/79064",
         "bookSrc": "https://www.hachettebookgroup.com/titles/david-sax/the-revenge-of-analog/9781610395724/",
-        "bookImageSrc": "https://www.hachettebookgroup.com/wp-content/uploads/2017/06/9781610395724.jpg?fit=450%2C675"
+        "bookImageSrc": "https://www.hachettebookgroup.com/wp-content/uploads/2017/06/9781610395724.jpg"
     },
     {
         "date": "May 7, 2018",
@@ -830,6 +830,6 @@ const data = [
         "title": "Why you should play games, feat. game designer &amp; author Eric Zimmerman",
         "showAnchor": "https://www.wfmu.org/playlists/shows/75248",
         "bookSrc": "http://www.ericzimmerman.com/publications",
-        "bookImageSrc": "https://images.squarespace-cdn.com/content/v1/579b8aa26b8f5b8f49605c96/1472657289144-DI0FCV97DR5W7HJCTWF9/ke17ZwdGBToddI8pDm48kM404wW70LBJRMB97BMqW8tZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVF8xLWqvtoP__VZSPZ-OmvnzWmeHpZeVxF-sWPShfcRBYQNYiICRxjrKbuetpzyt5E/rules_of_play_front_page_photo2.jpg?format=750w"
+        "bookImageSrc": "https://images.squarespace-cdn.com/content/v1/579b8aa26b8f5b8f49605c96/1472657289144-DI0FCV97DR5W7HJCTWF9/ke17ZwdGBToddI8pDm48kM404wW70LBJRMB97BMqW8tZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVF8xLWqvtoP__VZSPZ-OmvnzWmeHpZeVxF-sWPShfcRBYQNYiICRxjrKbuetpzyt5E/rules_of_play_front_page_photo2.jpg"
     }
 ]

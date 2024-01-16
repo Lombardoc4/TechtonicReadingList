@@ -1,12 +1,7 @@
-(() => {
-    // let data = [];
-
+((data) => {
     const qs = (selector, parent = document) => parent.querySelector(selector);
-
     const qsa = (selector, parent = document) => parent.querySelectorAll(selector);
-
     const createEl = el => document.createElement(el);
-
     const formatDate = (date) => {
         const yyyy = new Date(date).getFullYear();
         const mm = new Date(date).getMonth() + 1;
@@ -16,136 +11,72 @@
 
         return `${mm}-${dd}-${yyyy}`;
     };
-
+    const bookList = qs('#booklist');
+    const imgPlaceholder = qs('.img-placeholder');
+    const bookPlaceholder = qs('.book-entry-placeholder');
     const parseLength = 50;
     const parseTitle = copy => (copy.length <= parseLength ? copy : `${copy.slice(0, parseLength)}...`);
 
-    const checkWindowSize = () => {
-        const resizeContainers = ['#booklist', 'body'];
 
-        let i = 0;
-        while (i < resizeContainers.length) {
-            const container = qs(resizeContainers[i]);
-            container.classList.remove('sm', 'md');
-            if (window.innerWidth < 992)
-                container.classList.add(window.innerWidth < 666 ? 'sm' : 'md');
+    const loadCard = async ({ date, title, showAnchor, bookSrc }, i) => {
+            const bookTemplate = bookPlaceholder.cloneNode(true)
+            bookTemplate.dataset.index = i;
+            bookTemplate.classList.remove('book-entry-placeholder', 'd-none')
 
-            i += 1;
-        }
+            // Update Show Date
+            qs('.show-data', bookTemplate).innerHTML = date;
+
+            // Update Title
+            qs('.show-title', bookTemplate).innerHTML = title;
+
+            // Add title attr to view full show title
+            qs('.book-container', bookTemplate).title = title;
+
+            // Update button anchors
+            const [book, show] = qsa('.btn-group .btn', bookTemplate);
+            book.href = bookSrc;
+            show.href = showAnchor;
+
+            // Add to DOM
+            bookList.append(bookTemplate);
     };
-
-    const loadCards = async () => {
-        let i = 0;
-        let year = 0;
-
-        while (i < data.length) {
-            const { date, title, showAnchor, bookSrc } = data[i];
-
-            const showTitle = createEl('b');
-            showTitle.innerHTML = parseTitle(title);
-
-            const showDate = createEl('p');
-            showDate.classList.add('bookDate');
-            showDate.innerHTML = formatDate(date);
-
-            const showCopy = createEl('div');
-            showCopy.classList.add('showCopy');
-
-            const showLink = createEl('a');
-            showLink.innerHTML = 'Playlist';
-            showLink.href = showAnchor;
-            showLink.target = '_blank';
-            showLink.role = 'button';
-            showLink.classList.add('btn');
-
-            const bookLink = createEl('a');
-            bookLink.innerHTML = 'Book';
-            bookLink.href = bookSrc;
-            bookLink.target = '_blank';
-            bookLink.rel = 'noreferrer';
-            bookLink.classList.add('btn');
-
-            const btnGroup = createEl('div');
-            btnGroup.classList.add('btn-group');
-
-            const bookEntry = createEl('div');
-            bookEntry.classList.add('bookEntry', 'lazy');
-            bookEntry.dataset.entry = i;
-
-            const bookContainer = createEl('div');
-            bookContainer.classList.add('bookContainer')
-            bookContainer.setAttribute('title', title);
-
-
-            const showInfo = createEl('div');
-            showInfo.classList.add('showInfo');
-
-            showCopy.append(showDate);
-            showCopy.append(showTitle);
-            btnGroup.append(bookLink);
-            btnGroup.append(showLink);
-
-            bookContainer.append(showCopy);
-
-
-            bookEntry.append(bookContainer);
-            bookEntry.append(btnGroup);
-            // bookEntry.append(btnGroup);
-
-            const bookList = qs('#booklist');
-            bookList.append(bookEntry);
-
-            i += 1;
-        }
-    };
-
 
     const lazyAddImage = () => {
-        const allBooks = qsa('.bookEntry.lazy');
+        const unloadedBooks = qsa('.book-entry.lazy');
 
-        let i = 0;
-        while (i < allBooks.length) {
-            const id = allBooks[i].dataset.entry;
-            const elPosition = allBooks[i].getBoundingClientRect();
+        for (let i = 0; i < unloadedBooks.length; i++) {
+            const book = unloadedBooks[i]
+            const bookData = data[book.dataset.index]
+            const { top: elTop } = book.getBoundingClientRect();
 
-            if (elPosition.top < window.innerHeight) {
-                allBooks[i].classList.remove('lazy');
-
-                const bookImageLink = createEl('a');
-                bookImageLink.href = data[id].bookSrc;
-                bookImageLink.target = '_blank';
-                bookImageLink.rel = 'noreferrer';
-                bookImageLink.classList.add('preloader', 'imgLink');
-                const bookImg = createEl('img');
-                bookImg.classList.add('bookImg');
-                bookImg.alt = data[id].title;
-                bookImg.style.height = '0';
-                bookImg.src = data[id].bookImageSrc;
-                bookImg.onload = () => {
-                    bookImg.style.height = 'auto';
-                    bookImageLink.classList.remove('preloader');
-                };
-
-                bookImageLink.appendChild(bookImg);
-                qs('div', allBooks[i]).prepend(bookImageLink);
-            } else {
-                return;
+            // if element out of view skip
+            if (elTop > window.innerHeight) {
+                return
             }
-            i += 1;
+
+            // Clone Template
+            const imgTemplate = imgPlaceholder.cloneNode(true);
+
+            // Update outer anchor
+            imgTemplate.href = bookData.bookSrc;
+            imgTemplate.classList.remove('img-placeholder', 'd-none');
+
+
+            // Update inner img
+            const bookImg = qs('img', imgTemplate);
+            bookImg.alt = bookData.title;
+            bookImg.src = bookData.bookImageSrc;
+            bookImg.onload = () => {
+                bookImg.style.height = 'auto';
+                imgTemplate.classList.remove('preloader');
+            };
+
+            // Add to DOM
+            qs('.book-container', book).prepend(imgTemplate);
+            book.classList.remove('lazy');
         }
     };
 
-    // Add Dates to side nav
-    // start from min year go to now then reverse array
-
-
-    const filterContainer = qs('.filter-container ');
-
-    filterContainer.addEventListener('click', function(e)  {
-        if (e.target === this){
-            this.classList.remove('open');
-        }
-    })
 
     const unFreezeScroll = () => {
         const scrollY = document.body.style.top;
@@ -156,7 +87,14 @@
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
 
-    qs('#searchBar').addEventListener('input', (e) => {
+    const filterContainer = qs('.filter-container');
+    filterContainer.addEventListener('click', function(e)  {
+        if (e.target === this){
+            this.classList.remove('open');
+        }
+    })
+
+    qs('#searchInput').addEventListener('input', (e) => {
         const input = e.target.value;
         // const filterContainer = qs('.filter-container');
 
@@ -218,24 +156,18 @@
 
 
         searchResContainer.scrollTop = searchResContainer.scrollHeight;
-
-
     });
 
-    window.onresize = () => checkWindowSize();
     window.addEventListener('load', async () => {
-        checkWindowSize();
-        // const fetchData = await fetch('http://localhost:5500/data.json');
-        // data = await fetchData.json();
-        // console.log('data', data)
 
-        await loadCards(data);
+        for (let i = 0; i < data.length; i++) {
+            loadCard(data[i], i);
+        }
         lazyAddImage();
     });
-
 
     window.onscroll = () => {
         lazyAddImage();
         document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     };
-})();
+})(data);

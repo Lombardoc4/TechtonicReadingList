@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 'latest'
 
-        name: Install dependecies
+        name: Install dependencies
       - run: cd getTechtonicBook && npm i
         name: Fetch new data
       - run: cd getTechtonicBook && npm run fetch --if-present
