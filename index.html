@@ -17,6 +17,9 @@
     <!-- Book Entry Template -->
     <div class="book-entry lazy book-entry-placeholder d-none" data-index="0">
         <div class="book-container">
+            <a href="#" target="_blank" class="img-placeholder d-none preloader img-link">
+                <img src="img/preloader.gif" style="height: 0;" class="book-img">
+            </a>
             <div class="showCopy">
                 <p class="show-data"></p>
                 <p class="show-title"></p>
@@ -28,10 +31,6 @@
         </div>
     </div>
 
-    <!-- Book Image Template -->
-    <a href="#" target="_blank" class="img-placeholder d-none preloader img-link">
-        <img src="img/preloader.gif" style="height: 0;" class="book-img">
-    </a>
     <!-- Search Result Template -->
     <div class="s-result d-none">
         <img src="#" width="80px" />
@@ -49,7 +48,8 @@
         </div>
         <div class="content">
             <h1>Techtonic Reading&nbsp;List</h1>
-            <p>&emsp;"Conversations with creators and thinkers who are charting the way forward in a tech&#8209;saturated society. Tech, community, video games, and&nbsp;whatever else is next."
+            <p>&emsp;"Conversations with creators and thinkers who are charting the way forward in a
+                tech&#8209;saturated society. Tech, community, video games, and&nbsp;whatever else is next."
             </p>
         </div>
     </header>
@@ -59,13 +59,17 @@
     </div>
     <div class="search-bar">
         <div class="search-bar-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-bar-icon" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-bar-icon focus-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
             <input type="text" name="search" id="searchInput" placeholder="Search...">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-bar-icon clear-search" viewBox="0 0 16 16">
-                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="search-bar-icon clear-search" viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
         </div>
     </div>
 
@@ -86,7 +90,7 @@
             align-items: center;
             justify-content: center;
             position: fixed;
-            bottom: 2em;
+            bottom: 1em;
             right: 2em;
 
             background-color: #198754;
@@ -101,9 +105,7 @@
             color: #ffffff;
             opacity: 0;
             width: 0;
-            /* font-style: italic; */
             font-family: 'Courier Next', courier, monospace;
-            /* font-family: 'helvetica neue', helvetica, sans-serif; */
         }
 
         .lom-img-container {
