@@ -22,6 +22,8 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
 
 
 
@@ -259,6 +261,8 @@ Project Link: [https://github.com/Lombardoc4/TechtonicReadingList](https://githu
 [stars-url]: https://github.com/Lombardoc4/TechtonicReadingList/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Lombardoc4/TechtonicReadingList.svg?style=for-the-badge
 [issues-url]: https://github.com/Lombardoc4/TechtonicReadingList/issues
+[license-shield]: https://img.shields.io/github/license/Lombardoc4/TechtonicReadingList.svg?style=for-the-badge
+[license-url]: https://github.com/Lombardoc4/TechtonicReadingList/blob/master/LICENSE.txtstyle=for-the-badge
 [landing-screenshot]: img/landing.png
 [Github.io]: https://img.shields.io/badge/Github%20Actions-000000?style=for-the-badge&logo=githubactions&logoColor=white
 [Github-url]: https://github.com/Lombardoc4/TechtonicReadingList/actions
