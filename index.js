@@ -190,13 +190,13 @@
         // Open Results Container
         if (!document.body.classList.contains("noscroll")) openSearchResults();
 
-        // * Close container if input is empty
+        // Close container if input is empty
         if (value.length <= 0) {
             closeSearchResults();
             return;
         }
 
-        // * Filter through data
+        // Filter through data
         const searchResults = [
             ...data.filter(
                 (item) =>
@@ -204,16 +204,16 @@
             ),
         ];
 
-        // * Reset Results to replace with new result
+        // Reset Results to replace with new result
         clearSearchResults()
 
-        // * Handle no search results
+        // Handle no search results
         if (searchResults.length <= 0) {
             el.searchResults.append(createEl("h2", {innerHTML: 'No Results'}));
             return;
         }
 
-        // * Add Results to DOM
+        // Add Results to DOM
         searchResults.map(createSearchResult);
 
     });

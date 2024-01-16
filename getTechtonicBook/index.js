@@ -162,7 +162,7 @@ getShowData()
                 console.log("New Shows:", shows);
 
             } catch (err) {
-                console.error('Could not write to file', err);
+                console.error('Could not write to file', config.jsFile, err);
             }
         }
     })
