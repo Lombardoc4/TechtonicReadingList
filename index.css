@@ -76,7 +76,6 @@ header p {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 ;
-    /* justify-content: flex-end; */
 }
 
 .book-entry.active {
@@ -152,24 +151,17 @@ header p {
     padding: 0.25rem;
     margin: 0 auto 4rem;
 
-    background-color: #99CCFF;
     border-radius: 1rem;
+    border: 4px solid #99CCFF;
     box-shadow: 0 1rem 2.5rem -1.5rem;
 
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* gap: 1rem; */
-}
 
-.search-bar-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0.75rem;
-    border-radius: 1rem;
+    border-radius: 99rem;
     background: #fff;
-    /* overflow: hidden; */
 }
 
 .search-bar-icon {
@@ -189,7 +181,6 @@ header p {
     display: flex;
     flex: 1;
     -webkit-tap-highlight-color: transparent;
-    /* width: 100%; */
 }
 
 
@@ -203,7 +194,6 @@ header p {
     background:  rgba(153, 204, 255, 0.5);
     flex-direction: column;
     padding: 0 1rem;
-    /* justify-content: flex-end; */
     overflow: hidden;
 }
 
@@ -217,17 +207,8 @@ header p {
     display: none;
 }
 
-/* .search-results h2 {
-    text-align: center;
-    margin: 2rem;
-} */
-
 .search-results-container.open .search-results {
     display: grid;
-    /* gap: 0.5rem; */
-
-    /* padding: 6rem 0 4rem; */
-
     width: 100%;
     max-width: 500px;
     overflow: scroll;
@@ -286,14 +267,16 @@ header p {
 
 
     #booklist {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 6rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4rem;
     }
 
 
     .book-entry {
         font-size: 1rem;
-        gap: 1rem
+        gap: 1rem;
+        justify-content: flex-end;
+
     }
 
     .book-container {
@@ -306,12 +289,12 @@ header p {
 
     .show-title {
         font-size: 1.25rem;
+        min-height: 70.5px;
     }
 
     .btn-group {
         grid-template-columns: repeat(2, 1fr);
         gap: 0;
-        font-size: 1.25rem;
     }
 
     .search-bar {
@@ -321,8 +304,7 @@ header p {
     }
 
     .search-results-container.open .search-results {
-        max-height: 50%;
-        margin: 8rem auto 0;
+        margin: 8rem auto;
     }
 
 }
