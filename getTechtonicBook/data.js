@@ -1,5 +1,12 @@
 const data = [
                 {
+                    "date": "January 22, 2024",
+                    "title": "Ashley Shew, author, \"Against Technoableism\"",
+                    "showAnchor": "https://wfmu.org/playlists/shows/136182",
+                    "bookSrc": "https://bookshop.org/p/books/against-technoableism-rethinking-who-needs-improvement-ashley-shew/20615377?ean=9781324076254",
+                    "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/against-technoableism-cover_7059546372438748_pt.png"
+                },
+                {
                     "date": "December 11, 2023",
                     "title": "Guillaume Pitron, author, \"The Dark Cloud\"",
                     "showAnchor": "https://www.wfmu.org/playlists/shows/134801",
