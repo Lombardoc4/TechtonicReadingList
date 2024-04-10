@@ -59,6 +59,7 @@ header p {
 }
 
 #booklist {
+    font-size: 0.75rem;
     padding: 0 1rem;
     margin-bottom: 8rem;
 
@@ -69,7 +70,6 @@ header p {
 
 /* Singular Book */
 .book-entry {
-    font-size: 0.75rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -239,9 +239,36 @@ header p {
     font-size: 0.75rem;
 }
 
+/* Small Desktop */
+@media screen and (min-width: 728px) {
+
+    #booklist {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+/* Medium Desktop */
+@media screen and (min-width: 928px) {
+    #booklist {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+
+    .btn-group {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .search-bar {
+        top: 2rem;
+        /* margin: -8rem auto 8rem; */
+        width: 420px;
+    }
+}
 
 /* Desktop */
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 1200px) {
 
     h1 {
         font-size: 5rem;
@@ -267,16 +294,14 @@ header p {
 
 
     #booklist {
-        grid-template-columns: repeat(4, 1fr);
+        font-size: 1rem;
         gap: 4rem;
     }
 
 
     .book-entry {
-        font-size: 1rem;
         gap: 1rem;
         justify-content: flex-end;
-
     }
 
     .book-container {
@@ -292,16 +317,7 @@ header p {
         min-height: 70.5px;
     }
 
-    .btn-group {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0;
-    }
 
-    .search-bar {
-        top: 2rem;
-        margin: -8rem auto 8rem;
-        width: 420px;
-    }
 
     .search-results-container.open .search-results {
         margin: 8rem auto;

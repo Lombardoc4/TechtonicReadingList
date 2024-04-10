@@ -1,4 +1,18 @@
 const data = [
+            {
+                "date": "March 18, 2024",
+                "title": "Ian Johnson, author of \"Sparks,\" on China's underground historians",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/138018",
+                "bookSrc": "https://bookshop.org/p/books/sparks-china-s-underground-historians-and-their-battle-for-the-future-ian-johnson/19810812?ean=9780197575505",
+                "bookImageSrc": "https://wfmu.org/Gfx/playlist_images/TD/sparks-cover_710799037222582_pt.jpg"
+            },
+            {
+                "date": "February 19, 2024",
+                "title": "Scott Shapiro, author, \"Fancy Bear Goes Phishing\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/137124",
+                "bookSrc": "https://bookshop.org/p/books/fancy-bear-goes-phishing-the-dark-history-of-the-information-age-in-five-extraordinary-hacks-scott-j-shapiro/18789092",
+                "bookImageSrc": "https://wfmu.org/Gfx/playlist_images/TD/fancy-bear-cover_7083827786826248_pt.png"
+            },
                 {
                     "date": "January 22, 2024",
                     "title": "Ashley Shew, author, \"Against Technoableism\"",

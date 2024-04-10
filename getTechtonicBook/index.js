@@ -25,8 +25,7 @@ const ObjEach = (object, callback) => {
 
 
 
-// Make an axios request to
-async function getWebContent(url) {
+const getDom = async (url) => {
     let data = null;
     try {
         data = await axios.get(url);
@@ -36,13 +35,8 @@ async function getWebContent(url) {
         console.error(err.response.status); // ***
         console.error(err.response.headers); // ***
     } finally {
-        return { data };
+        return data ? new JSDOM(data.data).window : { document: false };
     }
-}
-
-const getDom = async (url) => {
-    const { data } = await getWebContent(url);
-    return data ? new JSDOM(data).window : { document: false };
 };
 
 const showDetails = (el) => {
@@ -65,6 +59,7 @@ const showDetails = (el) => {
 };
 
 const bookDetails = (el) => {
+    const bookData = {};
     // Get Book Src
     const bookLink = el.querySelector("#show_top_html a");
     bookData.bookSrc = bookLink ? bookLink.getAttribute("href") : "";
@@ -88,7 +83,7 @@ const getShowData = async () => {
 
     // * If need to get missing shows
     // * Update date to last recorded show
-    // const cutoffDate = new Date("February 13, 2023");
+    // const cutoffDate = new Date("December 11, 2023");
     // const showDate = (el) => {
     //     return el.textContent.substring(1, el.textContent.indexOf(":")).trim();
     // };
