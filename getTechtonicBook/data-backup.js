@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "April 15, 2024",
+                "title": "Richard Polt, author, \"The Typewriter Revolution\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/138921",
+                "bookSrc": "https://bookshop.org/p/books/the-typewriter-revolution-a-typist-s-companion-for-the-21st-century-richard-polt/12487014?ean=9781581573114",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/typewriter-revolution_7132019350227212_pt.jpg"
+            },
+            {
                 "date": "March 18, 2024",
                 "title": "Ian Johnson, author of \"Sparks,\" on China's underground historians",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/138018",
