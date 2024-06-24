@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "June 24, 2024",
+                "title": "Byron Tau, author, \"Means of Control\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/141329",
+                "bookSrc": "https://bookshop.org/p/books/means-of-control-how-the-hidden-alliance-of-tech-and-government-is-creating-a-new-american-surveillance-state-byron-tau/20063692?ean=9780593443224",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/means-of-control-cover_7192656501848779_pt.png"
+            },
+            {
                 "date": "April 22, 2024",
                 "title": "Eve Herold, author, \"Robots and the People Who Love Them\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/139154",

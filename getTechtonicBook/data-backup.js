@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "April 22, 2024",
+                "title": "Eve Herold, author, \"Robots and the People Who Love Them\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/139154",
+                "bookSrc": "https://bookshop.org/p/books/robots-and-the-people-who-love-them-holding-on-to-our-humanity-in-an-age-of-social-robots-eve-herold/19995344",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/famous-robots_7137474112205383_pt.jpg"
+            },
+            {
                 "date": "April 15, 2024",
                 "title": "Richard Polt, author, \"The Typewriter Revolution\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/138921",
