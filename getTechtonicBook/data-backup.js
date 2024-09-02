@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "August 19, 2024",
+                "title": "Paula Bialski, author, \"Middle Tech\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/143172",
+                "bookSrc": "https://press.princeton.edu/books/paperback/9780691257167/middle-tech",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/middle-tech-cover_7240956018049143_pt.jpg"
+            },
+            {
                 "date": "June 24, 2024",
                 "title": "Byron Tau, author, \"Means of Control\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/141329",

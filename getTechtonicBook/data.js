@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "September 2, 2024",
+                "title": "Carl Öhman, author, \"The Afterlife of Data\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/143612",
+                "bookSrc": "https://press.uchicago.edu/ucp/books/book/chicago/A/bo209942751.html",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/afterlife-of-data-cover_7252982715002287_pt.jpg"
+            },
+            {
                 "date": "August 19, 2024",
                 "title": "Paula Bialski, author, \"Middle Tech\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/143172",
