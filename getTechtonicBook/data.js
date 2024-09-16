@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "September 16, 2024",
+                "title": "Helen Phillips, author, \"HUM\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/144052",
+                "bookSrc": "https://www.simonandschuster.com/books/Hum/Helen-Phillips/9781668008836",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/hum-cover_7263437782595664_pt.jpg"
+            },
+            {
                 "date": "September 2, 2024",
                 "title": "Carl Öhman, author, \"The Afterlife of Data\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/143612",
