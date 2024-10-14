@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "September 30, 2024",
+                "title": "Tim Schwab, author, \"The Bill Gates Problem\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/144583",
+                "bookSrc": "https://bookshop.org/p/books/the-bill-gates-problem-reckoning-with-the-myth-of-the-good-billionaire-tim-schwab/19693643?ean=9781250850102",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/bill-gates-problem-cover_7277254185819622_pt.jpg"
+            },
+            {
                 "date": "September 16, 2024",
                 "title": "Helen Phillips, author, \"HUM\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/144052",
