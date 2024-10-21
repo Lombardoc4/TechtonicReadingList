@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "October 21, 2024",
+                "title": "Christopher Brown, author, \"A Natural History of Empty Lots\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/145230",
+                "bookSrc": "https://bookshop.org/p/books/a-natural-history-of-empty-lots-field-notes-from-urban-edgelands-back-alleys-and-other-wild-places-christopher-brown/21128218?ean=9781643263366",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/natural-history-of-empty-lots-cover_7293722674866106_pt.jpg"
+            },
+            {
                 "date": "October 14, 2024",
                 "title": "Yaroslav Trofimov, author, \"Our Enemies Will Vanish\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/145042",

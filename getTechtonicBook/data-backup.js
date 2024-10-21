@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "October 14, 2024",
+                "title": "Yaroslav Trofimov, author, \"Our Enemies Will Vanish\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/145042",
+                "bookSrc": "https://bookshop.org/p/books/our-enemies-will-vanish-the-russian-invasion-and-ukraine-s-war-of-independence-yaroslav-trofimov/20453202",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/our-enemies-will-vanish-cover_7289277673141768_pt.jpg"
+            },
+            {
                 "date": "September 30, 2024",
                 "title": "Tim Schwab, author, \"The Bill Gates Problem\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/144583",
