@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "December 2, 2024",
+                "title": "Nicole Kobie, author, \"The Long History of the Future\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/146677",
+                "bookSrc": "https://bookshop.org/p/books/the-long-history-of-the-future-why-tomorrow-s-technology-still-isn-t-here-nicole-kobie/20975802?ean=9781399403108",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/the-long-history-of-the-future_7331509789574762_pt.jpg"
+            },
+            {
                 "date": "October 21, 2024",
                 "title": "Christopher Brown, author, \"A Natural History of Empty Lots\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/145230",
