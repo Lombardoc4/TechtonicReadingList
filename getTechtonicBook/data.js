@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "December 9, 2024",
+                "title": "Arvind Narayanan, author, \"AI Snake Oil\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/146887",
+                "bookSrc": "https://bookshop.org/p/books/ai-snake-oil-what-artificial-intelligence-can-do-what-it-can-t-and-how-to-tell-the-difference-arvind-narayanan/21324674",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/ai-snake-oil-cover_7337108619353927_pt.jpg"
+            },
+            {
                 "date": "December 2, 2024",
                 "title": "Nicole Kobie, author, \"The Long History of the Future\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/146677",
