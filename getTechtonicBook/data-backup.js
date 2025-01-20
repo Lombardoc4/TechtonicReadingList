@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "December 30, 2024",
+                "title": "Andrew Smith, author, \"Devil in the Stack\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/147616",
+                "bookSrc": "https://bookshop.org/p/books/codified/19995689?ean=9780802158840",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/devil-in-the-stack-cover_7355908061452791_pt.png"
+            },
+            {
                 "date": "December 9, 2024",
                 "title": "Arvind Narayanan, author, \"AI Snake Oil\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/146887",

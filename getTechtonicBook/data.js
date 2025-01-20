@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "January 20, 2025",
+                "title": "Kirk Pearson, author, \"Electronic Music From Scratch\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/148227",
+                "bookSrc": "https://bookshop.org/book/9781680458091",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/cover-electronic-music_7371489075135843_pt.jpg"
+            },
+            {
                 "date": "December 30, 2024",
                 "title": "Andrew Smith, author, \"Devil in the Stack\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/147616",
