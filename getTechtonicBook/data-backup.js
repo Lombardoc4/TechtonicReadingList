@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "February 17, 2025",
+                "title": "Nick Couldry, author, \"The Space of the World\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/149244",
+                "bookSrc": "https://bookshop.org/p/books/the-space-of-the-world-can-human-solidarity-survive-social-media-and-what-if-it-can-t-nick-couldry/21410514?ean=9781509554737&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/cover-space-of-the-world_7397977485463658_pt.png"
+            },
+            {
                 "date": "January 20, 2025",
                 "title": "Kirk Pearson, author, \"Electronic Music From Scratch\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/148227",
