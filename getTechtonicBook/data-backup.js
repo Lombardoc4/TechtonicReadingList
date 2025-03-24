@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "March 17, 2025",
+                "title": "Ben Snyder, author, \"Spy Plane\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/150162",
+                "bookSrc": "https://bookshop.org/p/books/spy-plane-inside-baltimore-s-surveillance-experiment-benjamin-h-snyder/21312170?ean=9780520396036&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/spy-plane-cover_7422223371593931_pt.jpg"
+            },
+            {
                 "date": "February 17, 2025",
                 "title": "Nick Couldry, author, \"The Space of the World\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/149244",

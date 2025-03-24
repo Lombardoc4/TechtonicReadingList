@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "March 24, 2025",
+                "title": "Liz Pelly, author, \"Mood Machine\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/150392",
+                "bookSrc": "https://bookshop.org/p/books/mood-machine-the-rise-of-spotify-and-the-costs-of-the-perfect-playlist-liz-pelly/21580625?ean=9781668083505&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/mood-machine-cover_7428427007545485_pt.jpg"
+            },
+            {
                 "date": "March 17, 2025",
                 "title": "Ben Snyder, author, \"Spy Plane\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/150162",
