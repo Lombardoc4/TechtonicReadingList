@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "April 14, 2025",
+                "title": "John Warner, author, \"More Than Words\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/150949",
+                "bookSrc": "https://bookshop.org/p/books/more-than-words-how-to-think-about-writing-in-the-age-of-ai-john-warner/21521573?ean=9781541605503&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/more-than-words-cover_7443005741059978_pt.jpg"
+            },
+            {
                 "date": "March 24, 2025",
                 "title": "Liz Pelly, author, \"Mood Machine\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/150392",

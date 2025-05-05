@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "May 5, 2025",
+                "title": "Sybil Derrible, author, \"The Infrastructure Book\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/151759",
+                "bookSrc": "https://bookshop.org/p/books/the-infrastructure-book-how-cities-work-and-power-our-lives-sybil-derrible/21546776?ean=9781493086641&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/infrastructure-book-cover_7463906032991309_pt.jpg"
+            },
+            {
                 "date": "April 14, 2025",
                 "title": "John Warner, author, \"More Than Words\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/150949",
