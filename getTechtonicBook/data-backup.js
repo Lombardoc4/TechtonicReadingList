@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "May 26, 2025",
+                "title": "David Greenwood, author, \"The Cloud Intern\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/152407",
+                "bookSrc": "https://underthebqe.com/books/p/stanton-recipes-ed-1-9h696",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/cloud-intern-cover_7481300796013169_pt.png"
+            },
+            {
                 "date": "May 5, 2025",
                 "title": "Sybil Derrible, author, \"The Infrastructure Book\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/151759",

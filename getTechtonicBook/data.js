@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "June 2, 2025",
+                "title": "Emily M. Bender and Alex Hanna, authors, \"The AI Con\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/152572",
+                "bookSrc": "https://bookshop.org/p/books/the-ai-con-how-to-fight-big-tech-s-hype-and-create-the-future-we-want-alex-hanna/22044744?ean=9780063418561&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/the-ai-con-cover_7485406647375727_pt.jpg"
+            },
+            {
                 "date": "May 26, 2025",
                 "title": "David Greenwood, author, \"The Cloud Intern\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/152407",
