@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "June 23, 2025",
+                "title": "Lori Emerson, author, \"Other Networks\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/153378",
+                "bookSrc": "https://shop.mexicansummer.com/merch/495898-lori-emerson-other-networks-a-radical-technology-sourcebook",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/other-networks-cover_7506324443802240_pt.jpg"
+            },
+            {
                 "date": "June 2, 2025",
                 "title": "Emily M. Bender and Alex Hanna, authors, \"The AI Con\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/152572",
