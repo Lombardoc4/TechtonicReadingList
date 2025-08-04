@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "July 21, 2025",
+                "title": "Daniel Solove, author, \"On Privacy and Technology\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/154339",
+                "bookSrc": "https://bookshop.org/p/books/on-privacy-and-technology-daniel-j-solove/22366741?ean=9780197771686&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/solove-cover_7531169925073604_pt.png"
+            },
+            {
                 "date": "June 23, 2025",
                 "title": "Lori Emerson, author, \"Other Networks\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/153378",

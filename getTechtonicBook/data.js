@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "August 4, 2025",
+                "title": "Ed Park, author, \"An Oral History of Atlantis\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/154814",
+                "bookSrc": "https://bookshop.org/p/books/an-oral-history-of-atlantis-stories-ed-park/21982341?ean=9780812998993&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/oral-history-of-atlantis-cover_7543343677612129_pt.png"
+            },
+            {
                 "date": "July 21, 2025",
                 "title": "Daniel Solove, author, \"On Privacy and Technology\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/154339",
