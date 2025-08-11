@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "August 11, 2025",
+                "title": "Adam Becker, author, \"More Everything Forever\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/154965",
+                "bookSrc": "https://bookshop.org/p/books/more-everything-forever-ai-overlords-space-empires-and-silicon-valley-s-crusade-to-control-the-fate-of-humanity-adam-becker/21451550",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/more-everything-forever-cover_7546883133683700_pt.jpg"
+            },
+            {
                 "date": "August 4, 2025",
                 "title": "Ed Park, author, \"An Oral History of Atlantis\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/154814",
