@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "September 1, 2025",
+                "title": "Cory Doctorow, author and journalist",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/155658",
+                "bookSrc": "https://bookshop.org/p/books/enshittification-why-everything-suddenly-got-worse-and-what-to-do-about-it-cory-doctorow/22123424?ean=9780374619329&next=t&affiliate=3214",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/enshittification-cover_7565102582489779_pt.jpg"
+            },
+            {
                 "date": "August 25, 2025",
                 "title": "Webb Keane, author, \"Animals, Robots, Gods\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/155425",

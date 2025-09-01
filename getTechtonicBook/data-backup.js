@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "August 25, 2025",
+                "title": "Webb Keane, author, \"Animals, Robots, Gods\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/155425",
+                "bookSrc": "https://press.princeton.edu/books/hardcover/9780691270937/animals-robots-gods",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/animals-robots-gods-cover_7559051036454315_pt.jpg"
+            },
+            {
                 "date": "August 11, 2025",
                 "title": "Adam Becker, author, \"More Everything Forever\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/154965",
