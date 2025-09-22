@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "September 22, 2025",
+                "title": "Glenn Adamson, author, \"A Century of Tomorrows\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/156259",
+                "bookSrc": "https://bookshop.org/p/books/a-century-of-tomorrows-how-imagining-the-future-shapes-the-present-glenn-adamson/dd093f1ebbb6d6c4?ean=9781639730230&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/adamson-cover_7581333662527421_pt.jpg"
+            },
+            {
                 "date": "September 1, 2025",
                 "title": "Cory Doctorow, author and journalist",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/155658",
