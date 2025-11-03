@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "November 3, 2025",
+                "title": "Aram Sinnreich, co-author, \"The Secret Life of Data\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/157671",
+                "bookSrc": "https://bookshop.org/p/books/the-secret-life-of-data-navigating-hype-and-uncertainty-in-the-age-of-algorithmic-surveillance-aram-sinnreich/f4924c0b6c17526f?ean=9780262048811&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/secret-life-of-data-cover_7617652583119722_pt.jpg"
+            },
+            {
                 "date": "September 29, 2025",
                 "title": "Megan Greenwell, author, \"Bad Company: Private Equity and the Death of the American Dream\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/156556",

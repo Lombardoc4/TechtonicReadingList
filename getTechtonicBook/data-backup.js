@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "September 29, 2025",
+                "title": "Megan Greenwell, author, \"Bad Company: Private Equity and the Death of the American Dream\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/156556",
+                "bookSrc": "https://bookshop.org/p/books/bad-company-private-equity-and-the-death-of-the-american-dream-megan-greenwell/c2b4dd60a98c35d2?ean=9780063299351&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/megan-greenwell-cover_7589058585614413_pt.jpg"
+            },
+            {
                 "date": "September 22, 2025",
                 "title": "Glenn Adamson, author, \"A Century of Tomorrows\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/156259",
