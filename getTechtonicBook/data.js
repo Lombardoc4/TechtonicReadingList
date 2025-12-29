@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "December 29, 2025",
+                "title": "Tim Wu, author, \"The Age of Extraction\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/159555",
+                "bookSrc": "https://bookshop.org/p/books/the-age-of-extraction-how-tech-platforms-conquered-the-economy-and-threaten-our-future-prosperity-tim-wu/ee81a4888237ee0d?ean=9780593321249&next=t",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/age-of-extraction-cover_7665913164729992_pt.jpg"
+            },
+            {
                 "date": "November 3, 2025",
                 "title": "Aram Sinnreich, co-author, \"The Secret Life of Data\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/157671",
