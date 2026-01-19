@@ -1,5 +1,12 @@
 const data = [
             {
+                "date": "January 19, 2026",
+                "title": "Paul Bradley Carr, author, \"The Confessions\"",
+                "showAnchor": "https://www.wfmu.org/playlists/shows/160355",
+                "bookSrc": "https://www.simonandschuster.com/books/The-Confessions/Paul-Bradley-Carr/9781668074404",
+                "bookImageSrc": "https://www.wfmu.org/Gfx/playlist_images/TD/the-confessions-cover_7686829485738555_pt.jpg"
+            },
+            {
                 "date": "December 29, 2025",
                 "title": "Tim Wu, author, \"The Age of Extraction\"",
                 "showAnchor": "https://www.wfmu.org/playlists/shows/159555",
